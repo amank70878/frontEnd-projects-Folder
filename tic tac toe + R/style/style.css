@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+:root {
+    --bg-color: #1e0b37;
+}
+
+nav {
+    margin-bottom: 5vh;
+}
+
+nav ul {
+    background: var(--bg-color);
+    padding: 10px;
+}
+
+li {
+    list-style-type: none;
+    margin: 0 10px;
+}
+
+a {
+    color: white;
+    font-size: 1.7em;
+    font-weight: 500;
+    letter-spacing: .5px;
+    text-decoration: none;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+}
+
+.innercontainer {
+    margin: auto;
+    width: 83%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.left {
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    position: relative;
+}
+
+.line {
+    position: absolute;
+    width: 0vw;
+    height: 2px;
+    background: var(--bg-color);
+    transition: width 1s ease-in-out;
+}
+
+.cards {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.2px solid var(--bg-color);
+}
+
+.cards:hover {
+    background: #f7f5f8da;
+}
+
+.boxtext {
+    font-size: 6vw;
+}
+
+.b-t {
+    border-top: none;
+}
+
+.b-l {
+    border-left: none;
+}
+
+.b-r {
+    border-right: none;
+}
+
+.b-b {
+    border-bottom: none;
+}
+
+.right {
+    width: 50vw;
+    color: var(--bg-color);
+}
+
+.welcome {
+    font-size: 2em;
+    font-weight: 500;
+    letter-spacing: .2px;
+    cursor: pointer;
+}
+
+.smile {
+    font-size: 2em;
+    font-weight: 700;
+    position: absolute;
+    animation: smilemove linear 6s infinite;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.turnDiv {
+    font-size: 1.9em;
+    font-weight: 400;
+    letter-spacing: .1px;
+    cursor: pointer;
+}
+
+.btn {
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 0px 20px;
+    border-radius: 10px;
+    margin: 0 50px;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: white;
+    background: var(--bg-color);
+}
+
+#gif {
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+
+@keyframes smilemove {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(200deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .innercontainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left {
+        margin: auto;
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+        margin-bottom: 20px;
+    }
+
+    .welcome {
+        font-size: 1.5em;
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+        margin: auto;
+    }
+
+    .turnDiv {
+        font-size: 1.3em;
+    }
+
+}
+
+@media screen and (max-width: 342px) {
+    .smile {
+        display: none;
+    }
+}

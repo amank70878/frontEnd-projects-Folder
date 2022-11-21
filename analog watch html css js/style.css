@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    margin: 40px auto 0;
+    width: 40vw;
+    height: 40vw;
+    background: url('clock.png') no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+.hrs, .min, .sec{
+    position: absolute;
+    border-radius: 6px;
+    opacity: 0.8;
+    transform-origin: bottom;
+}
+.hrs{
+    left: 48.5%;
+    top: 23.6%;
+    width: 2.3%;
+    height: 27%;
+    background: black;;
+} 
+.min{
+    left: 48.84%;
+    top: 21%;
+    width: 1.4%;
+    height: 29%;
+    background: black;;
+}
+.sec{
+    left: 49.1%;
+    top: 13.8%;
+    width: 0.7%;
+    height: 36%;
+    background: black;;
+}

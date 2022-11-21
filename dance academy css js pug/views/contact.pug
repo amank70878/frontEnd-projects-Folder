@@ -1,0 +1,24 @@
+extends base.pug
+
+block scripts
+    script(src='../static/script.js')
+block style
+    style
+        include ../static/css/home.css
+        include ../static/css/contact.css
+
+block firstcontainer
+    section#contact-container 
+        //- br
+        //- br 
+        //- br
+        //- br
+        h1 Fill this Form and Join The Classes 
+        #form-container 
+            form(action="/" method='POST')
+                input(type="text", name="name" , placeholder='Enter your name') 
+                input(type="text", name="email" , placeholder='Enter your email Address') 
+                input(type="text", name="number" , placeholder='Enter your phone number') 
+                input(type="text", name="location" , placeholder='Enter your location') 
+                textarea(name="desc", cols="30", rows="10", placeholder='please tell us your concern') 
+                button(type="submit" class='btn') Save

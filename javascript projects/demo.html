@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOTSTRAP CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- DEMO CSS LINK -->
+    <link rel="stylesheet" href="static/style/demo.css">
+
+    <!-- utensils file link -->
+    <link rel="stylesheet" href="static/style/utensils.css">
+
+    <!-- JQUERY DATA TABLES CSS LINK  -->
+    <link rel="stylesheet" href="//cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
+
+    <!-- TITLE ICON & NAME LINK HERE  -->
+    <link rel="shortcut icon" href="images/project 5/favicon.png" type="image/x-icon">
+    <title>demo</title>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="navbtn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <h1 class="displayInFuture">
+        all the projects of javascript are here :) keep scrolling to learn something new or to
+        add something new
+    </h1>
+
+
+    <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    -------------------1st problem-------------------
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+    <section class="displayInFuture">
+        <div id="first-div">
+            <h1>Project 1: Enter your age to convert it in numbers</h1>
+            <button class="btn btn1" onclick="ageInNumber()">enter here</button>
+            <div id="first-inner-div">
+                <div id="info"></div>
+                <div id="ageInNumberDiv"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    -------------------2nd problem-------------------
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-->
+    <section class="displayInFuture">
+        <div id="second-div">
+            <h1>Project 2: generate divs on clicking the button</h1>
+            <button class="btn btn2" onclick="addDiv()">Add div</button>
+            <div id="second-cats-div"></div>
+        </div>
+    </section>
+
+
+    <!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    -------------------3rd problem-------------------
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-->
+    <section class="displayInFuture">
+        <div id="third-div">
+            <h1>project 3: game--> rock, paperm scissor</h1>
+            <div class="inner-third-div">
+                <div id="third-player-div">
+                    <h1>Choose any one option to start the game</h1>
+                    <img id="rock" class="img" src="static/images/project 2/p-rock.png" alt="" onclick="rpsgame(this)">
+                    <img id="paper" class="img" src="static/images/project 2/p-paper.png" alt=""
+                        onclick="rpsgame(this)">
+                    <img id="scissor" class="img" src="static/images/project 2/p-scissor.png" alt=""
+                        onclick="rpsgame(this)">
+                </div>
+                <div id="third-result-div">
+                    <img id="player-img" src="" alt="">
+                    <span id="result-span"></span>
+                    <img id="enemy-img" src="" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    -------------------4th problem-------------------
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-->
+    <section class="displayInFuture">
+        <div id="fourth-div">
+            <h1>project 4: change color of all the buttons on the page</h1>
+            <div id="fourth-innerDiv">
+                <form action="#">
+                    <select name="" class="fourth-select" onclick="changeColorFunction(this)">
+                        <option class="fourth-option" value="Reset">Reset</option>
+                        <option class="fourth-option" value="Red">Red</option>
+                        <option class="fourth-option" value="Blue">Blue</option>
+                        <option class="fourth-option" value="Green">Green</option>
+                        <option class="fourth-option" value="Grey">Grey</option>
+                        <option class="fourth-option" value="Yellow">Yellow</option>
+                        <option class="fourth-option" value="Random">Random</option>
+                    </select>
+                </form>
+                <button class="btn btn-41">button 1</button>
+                <button class="btn btn-42">button 2</button>
+                <button class="btn btn-43">button 3</button>
+                <button class="btn btn-44">button 4</button>
+                <button class="btn btn-45">button 5</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    -------------------5th problem-------------------
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-->
+    <section class="displayInFuture">
+        <div id="fifth-div">
+            <h1>project 5: game--> Blackjack </h1>
+            <div id="fifth-innerDiv">
+                <p class="fifth-letsPlay">Let's Play</p>
+                <div class="fifth-board">
+                    <div class="fifth-left">
+                        <p class="fifth-you">You : <span id='your-score'>0</span></p>
+                        <div id="your-box"></div>
+                    </div>
+                    <div class="fifth-right">
+                        <p class="fifth-dealer">Dealer : <span id="dealer-score">0</span></p>
+                        <div id="dealer-box"></div>
+                    </div>
+                </div>
+                <div id="fifth-btn-div">
+                    <button class="btn btn-51">Hit</button>
+                    <button class="btn btn-52">Stand</button>
+                    <button class="btn btn-53">Deal</button>
+                </div>
+                <div id="fifth-result-div">
+                    <div id="fifth-result-div-grid">
+                        <div id="fifth-wins" class="fifth-grid-div">Wins</div>
+                        <div id="fifth-losses" class="fifth-grid-div">Losses</div>
+                        <div id="fifth-draws" class="fifth-grid-div">Draws</div>
+                        <div id="fifth-wins-result" class="fifth-grid-div grid-values-1">0</div>
+                        <div id="fifth-losses-result" class="fifth-grid-div grid-values-2">0</div>
+                        <div id="fifth-draws-result" class="fifth-grid-div grid-values-3">0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    -------------------6th problem-------------------
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-->
+    <div class="displayInFuture">
+        <div class="jokeContainer">
+            <h1>project 6: Generate random Joke </h1>
+            <div class="jokeDiv"></div>
+            <button class="btn btn6" onclick='tellJoke()'>New Joke</button>
+        </div>
+    </div>
+
+
+    <!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    -------------------7th problem-------------------
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-->
+    <section class="displayInFuture">
+        <div class="container-7">
+            <div class="alertDiv7"></div>
+            <h1>project 7: CRUD Todo Project </h1>
+            <div class="inner-container-7">
+                <form action="">
+                    <input type="text" id="name7" value="" placeholder="Enter your Name"><br>
+                    <input type="text" id="note7" value="" placeholder="Enter your Short Notes">
+                </form>
+                <button class='btn btn-7'>Import New Note</button>
+
+                <table id="table_id" class="display">
+                    <thead>
+                        <tr>
+                            <th>S.No</th>
+                            <th>Name</th>
+                            <th>Notes</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody7">
+                        <tr>
+                            <td>01</td>
+                            <td>Aman</td>
+                            <td>I am imported manually</td>
+                            <td>
+                                <a href='#table_id' class="btn btnTable7 edit7" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">Edit</a>
+                                <a href="#table_id" class="btn btnTable7 delete7">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>02</td>
+                            <td>Ankit</td>
+                            <td>I am imported manually</td>
+                            <td>
+                                <a href='#table_id' class="btn btnTable7 edit7" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">Edit</a>
+                                <a href="#table_id" class="btn btnTable7 delete7">Delete</a>
+                            </td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>03</td>
+                            <td>Anubhav</td>
+                            <td>I am imported manually</td>
+                            <td>
+                                <a href='#table_id' class="btn btnTable7 edit7" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">Edit</a>
+                                <a href="#table_id" class="btn btnTable7 delete7">Delete</a>
+                            </td>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="">
+                                    <input type="text" class='modalInput' id="name7Modal" value=""
+                                        placeholder="Enter your Name"><br>
+                                    <input type="text" class='modalInput' id="note7Modal" value=""
+                                        placeholder="Enter your Short Notes">
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btnTable7 btn-secondary"
+                                    data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btnTable7 edit7Submit btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        -------------------8th problem-------------------
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-->
+    <section class="displayInFuture">
+        <div class="container-8">
+            <h1>Project 8: Generate random passwords</h1>
+            <div class="div-8">
+                <div>
+                    <span>Enter a number in which you want your password : </span><input type="number" class="input81">
+                </div>
+                <button class="btn btn-8" id="generate81">Generate Normal Password</button>
+                <form action="" class="form8">
+                    <div>
+                        <span>
+                            <label for="">Capital Alphabets</label>
+                            <input type="radio" name="pass1" class="big">
+                        </span>
+                        <span>
+                            <label for="">small alphabets</label>
+                            <input type="radio" name="pass2" class="small">
+                        </span>
+                        <span>
+                            <label for="">Numbers</label>
+                            <input type="radio" name="pass3" class="num">
+                        </span>
+                        <span>
+                            <label for="">Special Characters</label>
+                            <input type="radio" name="pass4" class="special">
+                        </span>
+                        <span>
+                            <label for="">Funny Password</label>
+                            <input type="radio" name="funny" class="funny">
+                        </span>
+                    </div>
+                </form>
+                <div class="pass1-8 pass81"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    -------------------9th problem-------------------
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-->
+    <section class="displayInFuture">
+        <div class="container-9">
+            <h1>Project 9 : Digital Clock & Alarm</h1>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 25%"
+                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="60"></div>
+            </div>
+            <div id='clockDiv'>
+                <div>
+                    <div>
+                        <span id='hrs'>00</span>
+                        <span>:</span>
+                        <span id='min'>00</span>
+                        <span>:</span>
+                        <span id='scd'>00</span>
+                    </div>
+                    <div>
+                        <span id='dateDiv'></span>
+                        <span>:</span>
+                        <span id='monthDiv'></span>
+                        <span>:</span>
+                        <span id='yearDiv'></span>
+                        <span id='dayDiv'></span>
+                    </div>
+                </div>
+            </div>
+            <div id="alarmDiv9">
+                <div>
+                    <span class="inputDiv9">
+                        <label for="">Set Alarm in : </label>
+                        <input type="text" placeholder="" class="alarm9Input">Seconds
+                        <button class="alarmBtn btn">Start</button>
+                        <button class="alarmBtn2 btn">Stop</button>
+                    </span>
+                    <div class="info9">Please make sure to give a value before staring the alarm :)</div>
+                </div>
+                <img class='alarmgif' src="static/images/project 9/alarmPic.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+     <!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    -------------------10th problem-------------------
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-->
+    <section class="displayInFuture">
+        <h1>Project 10: </h1>
+    </section>
+
+
+
+    <!-- javascript links  -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#table_id').DataTable();
+        });
+    </script>
+    <script src="static/script/demo.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+}
+#main{
+    display: flex;
+    flex-direction: row;
+}
+/* #left #left-img{
+    background: url('../images/left.png');
+    width: 933px;
+    height: 100vh;
+} */
+#right{
+    width: 666px;
+    padding: 64px 32px;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 87px;
+    height: 102px;
+}
+h5{
+    font-size: 24px;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0 0 0;
+}
+#form-div{
+    margin-top: 12px;
+}
+input{
+    margin:  15px 0px;
+    padding: 18px 15px;
+    width: 601px;
+    height: 52px;
+    font-size: 16px;
+    border: 1px solid rgb(189, 187, 187);
+    outline: none;
+}
+#btn{
+    background: #3f51b5;
+    border: none;
+    width: 100%;
+    color: white;
+    padding: 5px;
+    margin: 20px 0px;
+    font-weight: bold;
+    border-radius: 7px;
+    font-size: 14px;
+    padding: 8px;
+    cursor: pointer;
+}
+#last{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    float: right;
+}
+#last p{
+    text-align: end;
+    float: right;
+    text-decoration: underline;
+    color: blue;
+    margin: 8px 0px;
+    font-size: 15px;
+    font-weight: bold;
+}
+#last span{
+    margin: 8px 0;
+    padding: 7px 95px;
+    cursor: pointer;
+    background: white;
+    color: #f50057;
+    border: 1px solid #f50057;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+}
+footer{
+    text-align: center;
+    margin: 32px 0;
+    font-size: 14px;
+}

@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Playfair+Display:ital@1&family=Roboto:wght@300&display=swap');
+/* 
+font-family: 'Baloo Bhaina 2', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto', sans-serif; 
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bgcolor: rgba(0, 0, 0, 0.900);
+}
+
+
+
+/* navbar starts here */
+#navbar{
+    background: var(--bgcolor);
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+}
+#navbar #logodiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+#navbar #logodiv .logoimg{
+    width: 100px;
+    margin-right: -20px;
+}
+#navbar ul{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+#navbar ul li{
+    padding: 3px 18px;
+    list-style: none;
+}
+#navbar ul li a{
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding:3px 10px;
+    border-radius: 10px;
+}
+#navbar ul li a:hover{
+    color: rgb(49, 36, 36);;
+    background: white;
+}
+
+
+
+
+/* background container here */
+#bgcontainer::before{
+    content: '';
+    background: url(../static/images/bg1.jpg) no-repeat center center/cover;
+    position: absolute;
+    width: 100vw;
+    height: 450px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.8;
+}
+#bgcontainer #bgdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 450px;
+    color: black;
+    margin-bottom: 20px;
+}
+#bgcontainer #bgdiv h1{
+    font-size: 3.7rem;
+    margin: 20px;
+    text-shadow: 1px 3px;
+}
+#bgcontainer #bgdiv h3{
+    font-size: 2.7rem;
+    text-shadow: 1px 3px;
+}
+
+
+
+/* cards container here */
+#cards-container{
+    padding: 20px;
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#cards-container #cards{
+    width: 470px;
+    height: 250px;
+    border: 2px solid red;
+    background: #fff0ee;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column  ;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+#cards-container #cards h2{
+    font-size: 1.9rem;
+}
+#cards-container #cards img{
+    width: 150px;
+    height: 150px;
+}
+#cards-container #cards p{
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+
+
+
+/* footer starts here */
+#footer{
+    width: 100vw;
+    /* position: sticky; */
+    background: var(--bgcolor);
+}
+#footer h3{
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+
+
+
+/* utilities */
+#primary{
+    font-size: 2.6rem;
+    text-align: center;
+}

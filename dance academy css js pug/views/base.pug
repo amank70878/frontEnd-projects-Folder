@@ -1,0 +1,24 @@
+//- doctype html 
+html
+  head
+    title DanceAcademy
+    block scripts 
+    block style
+        include ../static/css/home.css
+  body  
+    nav#navbar
+        div#logodiv
+            img(src='../static/images/logo2.webp' alt='' class='logoimg') 
+            | DAW 
+        ul
+            li #[a(href='/') Home] 
+            li #[a(href='#cards-container') Missions] 
+            li #[a(href='/') Locations] 
+            li #[a(href='/about') About] 
+            li #[a(href='/contact') Contact US] 
+
+    block firstcontainer
+    block secondcontainer
+
+    footer#footer
+        h3 copyright &#169; DanceAcademyWorld.com | All Right Reserved 

@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background: #f8f5f5b4;
+    font-family: 'Roboto', sans-serif;
+}
+/* horizontal navbar section css */
+#h-nav-section #h-nav{
+    position: fixed;
+    width: 100vw;
+    background: #ffffff;
+}
+#h-nav-section #h-nav ul{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 17px;
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    margin: 0;
+}
+#h-nav-section #h-nav #nav-div #nav-div-img{
+    width: 22px;
+    margin: 0px 10px 0px 0px ;  
+    display: block;  
+}
+#h-nav-section #h-nav #logo-div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#h-nav-section #h-nav #logo-div img{
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+}
+#h-nav-section #h-nav #logo-div .font
+{
+    font-size: 1rem;
+    font-weight: bold;
+    font-weight: 600;
+    margin: 10px 0 0 12px;
+}
+#h-nav-section #h-nav #last-div
+{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 10px;
+    align-items: center;
+}
+#h-nav-section #h-nav #last-div .first
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f3f3f4;
+    border-radius: 40px;
+    height: 42px;
+    padding: 4px 18px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+#h-nav-section #h-nav #last-div .first img
+{
+    width: 24px;
+    height: 24px;
+    margin-right: 7px;
+}
+#h-nav-section #h-nav #last-div .second
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f3f3f4;
+    border-radius: 30px;
+    height: 42px;
+    padding: 16px;
+    margin: 0 8px 0 10px;
+    font-weight: 600;
+    background: #fdeaf1;
+}
+#h-nav-section #h-nav #last-div .second a{
+    cursor: pointer;    
+    text-decoration: none;
+    color: #f95997;
+}
+
+/* modals */
+#mainnetModal{
+    z-index: -1; 
+}
+#h-nav-section #h-nav .cards-mainnet{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 10px;    
+    width: 200px;
+    padding:  10px 0px;
+    background: #f8f5f5b4;
+    border-radius: 10px;
+}
+#h-nav-section #h-nav .cards-mainnet img{
+    width: 35px;
+    height: 35px;
+    margin-bottom: 10px;
+}
+#h-nav-section #h-nav .cards-mainnet h5{
+    text-align: center;
+    margin: 0px;
+}
+
+
+#h-nav-section #h-nav .modal-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+#h-nav-section #h-nav .cards-modal{
+    display: flex;
+    margin: 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    width: 200px;
+    background: #f8f5f5b4;
+    border-radius: 10px;
+}
+#h-nav-section #h-nav .cards-modal img{
+    width: 32px;
+    height: 32px;
+    margin-bottom: 10px;
+}
+#h-nav-section #h-nav .cards-modal h5{
+    font-size: 0.9rem;
+    text-align: center;
+    font-weight: bold;
+    margin: 0px;
+}
+
+
+
+/* main section here include vertical nav and body css */
+#main-container
+{
+    padding-top: 70px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    z-index: -1;
+}
+/* left navbar css */
+#main-container #left
+{
+    width: 192px;
+    position: fixed;
+    cursor: pointer;
+}
+#main-container #left #left-scrollable{
+    background: white;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+#main-container #left .left-cards{
+    width: 192px;
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+#main-container #left .left-cards:hover{
+    background: #f7d0df;
+    color: #f84a8d;
+}
+#main-container #left .left-cards img{
+    width: 25px;
+    height: 25px;
+    margin: 0 10px 0 20px;
+}
+#main-container #left .left-cards span{
+    display: none;
+}
+#main-container #left #last-left-card{
+    margin: 0px 10px 20px 0px;
+    padding-top: 5px;
+    font-size: 12px;
+    background: white;
+    position: relative;
+    border-top: 1px solid black;
+}
+#main-container #left #last-left-card #first-side{
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+}
+#main-container #left #last-left-card #first-side img{
+    width: 25px;
+    height: 25px;
+    margin: 7px 0 7px 40px;
+}
+#main-container #left #last-left-card #second-side{
+    /* display: flex;     */
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95px;
+    background: lightblue;
+}
+#main-container #left #last-left-card #second-side #rowone{
+    display: inherit;
+    position: absolute;
+    top: 0;
+    left: 50px;
+}
+#main-container #left #last-left-card #second-side #rowone #rowone-pinksale{
+    margin: 15px 10px 0 0;
+}
+#main-container #left #last-left-card #second-side #rowone #rowone-dollar{
+    margin: 15px 0px 0 20px;
+    font-weight: bold;
+}
+#main-container #left #last-left-card #second-side #rowtwo{
+    display: inherit;
+    position: absolute;
+    top: 55px;
+    left: 50px;
+}
+
+/* right navbar css here */
+#main-container #right
+{
+    position: absolute;
+    left: 75px;
+    background: #faf9fa;
+}
+#main-container #right #trending-container
+{
+    border-top: 2px solid rgba(236, 236, 236, 0.550);
+    border-bottom: 2px solid rgb(236, 236, 236, 0.200);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+#main-container #right #trending-container div{
+    margin: 0px 5px;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#main-container #right #trending-container #trending{
+    font-weight: 600;
+    font-size: 18px;
+}
+#main-container #right #trending-container #trending img{
+    width: 22px;
+    margin: 0px 5px;
+}
+#main-container #right #trending-container div span
+{
+    padding: 5px;
+    color: #f95192;
+}
+
+/* launchpad container */
+#protocol-container{
+    width: 70%;
+    margin: 0 auto;
+}
+#protocol-container #first-protocol{
+    margin: 130px 0 0 0 ;
+}
+#protocol-container #first-protocol h1{
+    font-size: 2.4rem;
+    text-align: center;
+    color: rgb(36, 36, 36);
+    margin: 20px 20px 20px 20px;
+    font-weight: 600;
+}
+#protocol-container #first-protocol p{
+    font-size: 1.3rem;
+    text-align: center;
+    font-style: normal;
+    margin: 3px 0 0px 0;
+    line-height: 1.5;
+}
+#protocol-container #first-protocol #btndiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Baloo Bhaijaan 2', 'cursive';
+    font-weight: bold;
+    cursor: pointer;
+}
+#protocol-container #first-protocol #btndiv div{
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 14px 30px;
+    margin: 27px 12px;
+    color: #f95997;
+    background: #fdeaf1;
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+#main-container #right #cards-container{
+    padding: 20px 0;
+    width: 70%;
+    margin: 2vh auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+}
+#main-container #right #cards-container .cards{
+    align-items: center;
+    width: 23%;
+    height: 20vh;
+    border-radius: 10px;
+    border: 2px solid rgb(236, 235, 235);
+    box-shadow: 5px 5px 20px rgba(194, 194, 194, 0.205);
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+    justify-content: center;
+    align-items: center;
+}
+#main-container #right #cards-container .cards h1{
+    margin-bottom: -8px ;
+    font-size: 2.3rem;
+    font-family: 'Baloo Bhaijaan 2', 'cursive';
+}
+#main-container #right #cards-container .cards p{
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+#main-container #right #suite-container{
+    padding: 20px 0;
+    width: 75%;
+    margin: 50px auto;   
+}
+#main-container #right #suite-container #heading-suite{
+    margin-bottom: 20px ;
+    text-align: center;
+    font-size: 2.5rem;
+}
+#main-container #right #suite-container p{
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: italic;
+    line-height: 0.8;
+}
+#main-container #right #suite-container #suite-cards-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+#main-container #right #suite-container #suite-cards-div .suite-cards{
+    display: flex;
+    flex-direction: column;
+    flex-direction: space-evenly;
+    padding: 25px 30px;
+    align-items: center;
+    width: 250px;
+    height: 300px;
+    margin: 15px 0px;
+    background: white;
+    border-radius: 10px;
+    border: 2px solid rgb(236, 235, 235);
+    box-shadow: 5px 5px 20px rgba(194, 194, 194, 0.205);
+    cursor: pointer;
+}
+#main-container #right #suite-container #suite-cards-div .suite-cards img{
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+}
+#main-container #right #suite-container #suite-cards-div .suite-cards h1{
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+#main-container #right #suite-container #suite-cards-div .suite-cards p{
+    font-size: 1rem;
+    line-height: 1.4;
+}
+/* #main-container #right #protocol-container{
+} */
+#main-container #right #protocol-container #heading{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#main-container #right #protocol-container #para{
+    font-size: 1.2rem;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#main-container #right #protocol-container #protocol-cards-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#main-container #right #protocol-container #protocol-cards-container .protocol-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    flex-direction: column;
+    width: 240px;
+    height: 300px;
+    padding: 30px 20px;
+    margin: 10px 0;
+    border-radius: 20px;
+    border: 2px solid rgb(236, 235, 235);
+    box-shadow: 5px 5px 20px rgba(194, 194, 194, 0.205);
+    cursor: pointer;
+}
+#main-container #right #protocol-container #protocol-cards-container .protocol-cards img{
+    width: 80px;
+    height: 80px;
+}
+#main-container #right #protocol-container #protocol-cards-container .protocol-cards #heading{
+    font-size: 1.8rem;
+    margin: 20px 10px;
+    font-weight: 600;
+}
+#main-container #right #protocol-container #protocol-cards-container .protocol-cards #para{
+    font-size: 0.9rem;
+    font-style: italic;
+    text-align: center  ;
+    line-height: 1.2;
+}
+#main-container #right #protocol-container #protocol-2cards-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#main-container #right #protocol-container #protocol-2cards-container .protocol-2cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    flex-direction: column;
+    width: 240px;
+    height: 300px;
+    padding: 30px 20px;
+    border-radius: 20px;
+    margin:  10px 10px;
+    border: 2px solid rgb(236, 235, 235);
+    box-shadow: 5px 5px 20px rgba(194, 194, 194, 0.205);
+    cursor: pointer;
+}
+#main-container #right #protocol-container #protocol-2cards-container .protocol-2cards img{
+    width: 80px;
+    height: 80px;
+}
+#main-container #right #protocol-container #protocol-2cards-container .protocol-2cards #heading2{
+    font-size: 1.8rem;
+    margin: 20px 10px;
+    font-weight: 600;
+}
+#main-container #right #protocol-container #protocol-2cards-container .protocol-2cards #para2{
+    font-size: 0.9rem;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.2;
+}
+
+
+
+/* footer disclaimer */
+#main-container #right #footer{
+    width: 56%;
+    margin: 100px auto;
+    padding: 20px 10px;
+    border: 2px solid rgb(236, 235, 235);
+    box-shadow: 5px 5px 20px rgba(194, 194, 194, 0.205);
+    cursor: pointer;
+}
+#main-container #right #footer #para-footer{
+    font-size: 1rem;
+    line-height:1.5 ;
+    text-align: center;
+}

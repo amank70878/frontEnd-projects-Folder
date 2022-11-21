@@ -1,0 +1,673 @@
+/* links here */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* default changes made here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* body css */
+body{
+    background: #1b1b1b;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* navbar here */
+#navbarSection nav ul{
+    cursor: pointer;
+    width: 100vw;
+    padding: 23px 0px;
+    display: flex;
+    background: #111;
+    flex-direction: row;
+    align-items: center;
+}
+.nav-i{
+    position: absolute;
+    padding-left: 20px;
+    color: white;
+    width: 30px;
+    margin: 0px 2px;
+    top: 27px;
+    font-size: 37px;
+}
+#navbarSection nav ul #navlogo{
+    margin: 0px 88px;
+    display: inherit;
+    position: inherit;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#navbarSection nav ul #navlogo img{
+    width: 125px;
+    height: 47px;
+}
+#navbarSection nav ul #searchbar{
+    display: inherit;
+    position: absolute;
+    right: 50px;
+    justify-content: center;
+    align-items: center;
+}
+#navbarSection nav ul #searchbar input{
+    width: 580px;
+    background: #252525;
+    border: none;
+    padding: 10px 40px 10px 15px;
+    font-size: 1.3rem;
+    color: #ffc119;
+    outline: none;
+} 
+#navbarSection nav ul #searchbar input::placeholder {
+    color: #ffc119;
+    opacity: 0.6; 
+} 
+#navbarSection nav ul #searchbar i{
+    background: #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    text-align: center;
+    font-weight: 900;
+    padding-right: 10px;
+    color: #ffc119;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* vertical navbar hide show */
+#verticalNav{
+    display: none;
+    position: fixed;
+    left: 0;
+    flex-direction: column;
+    width: 450px;
+    height: 702px;
+    overflow: auto;
+    background: #111111;
+}
+#verticalNav .firstsixcards{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #080808;
+    color: white;
+}
+#verticalNav .firstsixcards:hover{
+    /* .vnav-i(color: red;) */
+    color: #ffc119;
+}
+.active{
+    color: #ffc119;
+}
+.vnav-i{
+    font-size: 22px;
+    margin-left: 10px;
+    color: white;
+}
+.vnav-i:hover{
+    color: #ffc119;
+}
+#verticalNav .firstsixcards span{
+    cursor: pointer;
+    margin-left: 33px;
+}
+#verticalNav #genreVertical{
+    padding: 20px;
+}
+#verticalNav #genreVertical .genre-class{
+    font-size: 1.3rem;
+    color: white;
+    cursor: pointer;
+    margin-left: 27px;
+}
+#verticalNav #genreVertical .genre-class:hover{
+    color: #ffc119;
+}
+#verticalNav #genreVertical .genreverticalcards{
+    margin-left: 65px;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+#verticalNav #genreVertical .genreverticalcards .genreverticalspan{
+    color: white;
+    font-size: 1.3rem;
+    padding: 3px;
+    margin: 4px 0;
+    cursor: pointer;
+}
+#verticalNav #genreVertical .genreverticalcards .genreverticalspan:hover{
+    color: #ffc119;
+}
+
+
+/* naruto section nav here */
+#narutoLogo{
+    width: 100vw;
+    cursor: pointer;
+    margin-top: 35px;
+    height: 60px;
+    color: white;
+    background: #ffc119;
+    font-size: 0.85rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+#narutoLogo #narutoimg{
+    background: url('../images/narutoLogo.png') no-repeat center center/cover;
+    width: 85px;
+    height: 80px;
+    margin: 0 10px;
+    margin-bottom: 20px;
+}
+#narutoLogo #narutoBg{
+    background: url('../images/narutobg.png') no-repeat center center/cover;
+    position:relative;
+    float: right;
+    top: 0;
+    right: 10px;
+    width: 270px;
+    height: 60px;
+    margin-left: 1020px;
+}
+
+
+
+/* recently updated section css here */
+#recentlyCardsSection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 15px;
+    padding-bottom: 50px;
+    border: 2px solid grey;
+}
+#recentlyCardsSection .cards{
+    display: inherit;
+    flex-direction: column;
+    margin: 25px auto 10px auto;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#recentlyCardsSection .cards img{
+    width: 234px;
+    height: 340px;
+}
+#recentlyCardsSection .cards #text{
+    display: inherit;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2px 5px;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+}
+#recentlyCardsSection .cards .name-cards{
+    width: 230px;
+    padding-top: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #ffc119;
+    text-align: center;
+    line-height: 1;
+}
+#recentlyCardsSection .cards .epi-cards{
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+
+/* sasuke logo's section here */
+#sasukeLogo{
+    width: 100vw;
+    cursor: pointer;
+    margin-top: 35px;
+    height: 60px;
+    color: white;
+    background: #ffc119;
+    font-size: 0.85rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+#sasukeLogo #sasukeimg{
+    background: url('../images/sasukelogo.png') no-repeat  center/cover;
+    width: 85px;
+    height: 80px;
+    margin: 0 10px;
+    margin-bottom: 20px;
+}
+#sasukeLogo #sasukeBg{
+    background: url('../images/sasukebg.png') no-repeat center center/cover;
+    position:relative;
+    float: right;
+    top: 0;
+    right: 10px;
+    width: 270px;
+    height: 60px;
+    margin-left: 1040px;
+}
+
+
+
+/* recently added cards section here */
+#addedcardsSection{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 1190px;
+    position: relative;
+    border: 2px solid grey;
+    padding-bottom: 50px;
+}
+#addedcardsSection .cards{
+    width: 730px;
+    display: inherit;
+    flex-direction: row;
+    margin: 20px auto 0 auto;
+}
+#addedcardsSection .cards .left img{
+    width: 135px;
+    height: 165px;
+    cursor: pointer;
+}
+#addedcardsSection .cards .right{
+    padding: 10px 20px;
+}
+#addedcardsSection .cards .right .heading{
+    color: #ffc119;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+#addedcardsSection .cards .right .heading:hover{
+    color: white;
+}
+#addedcardsSection .cards .right .genre{
+    font-size: 1.2rem;
+    color: #898989;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+#addedcardsSection .cards .right .genre span:hover{
+    color: white;
+}
+#addedcardsSection .cards .right .latest{
+    color: #898989;
+    display: flex;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+#addedcardsSection .cards .right .latest p{
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+}
+#line{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 800px;
+    height: 94%;
+    border-left: 1px solid grey;
+    margin: 20px 0px 50px 0;
+}
+
+
+
+/* hinata logo's nav */
+#hinataLogo{
+    width: 100vw;
+    cursor: pointer;
+    margin-top: 35px;
+    height: 60px;
+    color: white;
+    background: #ffc119;
+    font-size: 0.85rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+#hinataLogo #hinataimg{
+    background: url('../images/hinataLogo.png') no-repeat  center/cover;
+    width: 85px;
+    height: 80px;
+    margin: 0 10px;
+    margin-bottom: 20px;
+}
+#hinataLogo #hinataBg{
+    background: url('../images/hinatabg.png') no-repeat center center/cover;
+    position:relative;
+    float: right;
+    top: 0;
+    right: 10px;
+    width: 270px;
+    height: 60px;
+    margin-left: 1240px;
+}
+
+
+
+/* upcoming section css here */
+#upcomingCardsSection{
+    height: 780px;
+    width: 100vw;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px 10px;
+    border: 1px solid grey;
+}
+#upcomingCardsSection .upcomingCards{
+    width: 760px;
+    margin: 4px 5px;
+    color: #ffc119;
+    padding: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+#upcomingCardsSection .upcomingCards:hover{
+    color:white;
+}
+#lineUpcomingCards{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 790px;
+    height: 95%;
+    border-left: 1px solid grey;
+    margin: 20px 0px 50px 0;
+}
+
+
+
+/* minato logo's nav */
+#minatoLogo{
+    width: 100vw;
+    cursor: pointer;
+    margin-top: 35px;
+    height: 60px;
+    color: white;
+    background: #ffc119;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: black;
+
+}
+#minatoLogo #minatoimg{
+    background: url('../images/minatoLogo.png') no-repeat  center/cover;
+    width: 85px;
+    height: 80px;
+    margin: 0 10px;
+    margin-bottom: 20px;
+}
+/* .activeday{
+    color: white;
+} */
+#minatoLogo button{
+    color: black;
+    margin: 0px 15px;
+    cursor: pointer;
+    background: #ffc119;
+    outline: none;
+    border: none;
+}
+#minatoLogo button:hover{
+    color: white;
+}
+#minatoLogo #minatoBg{
+    background: url('../images/minatobg.png') no-repeat center center/cover;
+    position:relative;
+    float: right;
+    top: 0;
+    right: 10px;
+    width: 270px;
+    height: 60px;
+    margin-left: 1020px;
+}
+
+
+
+/* day week month container css here */
+#dayUpdateSection{
+    height: 720px;
+    border: 2px solid grey;
+    padding: 20px 20px;
+}
+#daysection{
+    display: flex;
+    flex-direction: column;
+}
+#weeksection{
+    display: none;
+    flex-direction: column;
+}
+#monthsection{
+    display: none;
+    flex-direction: column;
+}
+#dayUpdateSection .cardsDaySection{
+    display: flex;
+    flex-direction: column;
+    margin: 8px 0;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+#dayUpdateSection .cardsDaySection .rowfirst{
+    display: inherit;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 4px;
+    color: #ffc119;
+    font-weight: 100;
+}
+#dayUpdateSection .cardsDaySection .rowfirst:hover{
+    color:white;
+}
+#dayUpdateSection .cardsDaySection .rowfirst .number{
+    width: 28px;
+    font-weight: bold;
+}
+#dayUpdateSection .cardsDaySection .rowfirst .h3{
+    font-weight: normal;
+}
+#dayUpdateSection .cardsDaySection .episodes{
+    margin-left: 29px;
+    color: white;
+    font-size: 1.2rem;
+}
+
+
+
+/* sakura navbar section css here */
+#sakuraLogo{
+    width: 100vw;
+    cursor: pointer;
+    margin-top: 35px;
+    height: 60px;
+    color: white;
+    background: #ffc119;
+    font-size: 0.85rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+#sakuraLogo #sakuraimg{
+    background: url('../images/sakuraLogo.png') no-repeat  center/cover;
+    width: 85px;
+    height: 80px;
+    margin: 0 10px;
+    margin-bottom: 20px;
+}
+#sakuraLogo #sakuraBg{
+    background: url('../images/sasukebg.png') no-repeat center center/cover;
+    position:relative;
+    float: right;
+    top: 0;
+    right: 10px;
+    width: 270px;
+    height: 60px;
+    margin-left: 1050px;
+}
+
+
+
+
+/* ongoing series section css here */
+#ongoingSection{
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    max-height: 100vh;
+    overflow: auto;
+    margin: 20px 20px 0px 0px;
+    border: 2px solid grey;
+    border-top: none;
+    
+}
+#ongoingSection .ongoingCards{
+    cursor: pointer;
+    padding: 4px 0;
+    font-size: 1.2rem;
+    color: #ffc119;
+}
+#ongoingSection .ongoingCards:hover{
+    color: white;
+}
+
+
+
+/* sakura navbar section css here */
+#nejiLogo{
+    width: 100vw;
+    cursor: pointer;
+    margin-top: 35px;
+    height: 60px;
+    color: white;
+    background: #ffc119;
+    font-size: 0.85rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+#nejiLogo #nejiimg{
+    background: url('../images/nejiLogo.png') no-repeat  center/cover;
+    width: 85px;
+    height: 80px;
+    margin: 0 10px;
+    margin-bottom: 20px;
+}
+#nejiLogo #nejiBg{
+    background: url('../images/nejibg.png') no-repeat center center/cover;
+    position:relative;
+    float: right;
+    top: 0;
+    right: 10px;
+    width: 270px;
+    height: 60px;
+    margin-left: 1150px;
+}
+
+
+
+/* genre container css here */
+#genreContainer{
+    padding: 20px ;
+    width: 100vw;
+    position: relative;
+    height: 880px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 2px solid grey;
+}
+#genreContainer .cardsGenre{
+    color: #ffc119;
+    font-size: 1.1rem;
+    width: 750px;
+    padding: 5px;
+    margin: 3px 0;
+    cursor: pointer;
+}
+#lineGenre{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 780px;
+    height: 92%;
+    border-left: 1px solid grey;
+    margin: 20px 0px 50px 0;
+}
+
+
+
+/* footer css here */
+#footer{
+    background: url('../images/footer_shadow.png') top center no-repeat;
+    width: 100vw;
+    margin: 130px 0 0 0;
+    padding: 30px 10px;
+    display: flex;
+    align-items: center;
+}
+#footer #leftfooter{
+    margin: 20px 0;
+}
+#footer #leftfooter #footer-ul
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+#footer #leftfooter #footer-ul li{
+    margin: 0px 5px;
+    font-size: 1.3rem;
+    list-style-type: none;
+    cursor: pointer;
+}
+#footer #leftfooter #footer-ul li a{
+    color: #959595;
+    text-decoration: none;
+    margin: 0 10px;
+}
+#footer #rightfooter{
+    margin: 20px 0;
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 270px;
+}
+#footer #rightfooter img{
+    cursor: pointer;
+    width: 60px;
+    margin: 0 10px;
+}
+#footer #rightfooter span{
+    color: #444;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: 600;
+}

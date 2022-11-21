@@ -1,0 +1,645 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* <!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------1st problem-------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--> */
+#first-div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#first-inner-div {
+    border: 2px solid grey;
+    width: 90%;
+    margin: auto;
+    min-height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#info,
+#ageInNumberDiv {
+    font-size: 1.7rem;
+    color: grey;
+}
+
+.btn1 {
+    background: #D5CABD;
+}
+
+
+
+/* <!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------2nd problem-------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--> */
+#second-div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#second-cats-div {
+    border: 2px solid grey;
+    width: 90%;
+    margin-top: 20px;
+    padding: 10px 20px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.second-cards {
+    width: 279px;
+    height: 200px;
+    background: linear-gradient(#ed4264, #ffedbc);
+    margin: 5px 0;
+}
+
+.btn2 {
+
+    background: #C4FCEF;
+}
+
+
+/* <!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------3rd problem-------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--> */
+#third-div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.inner-third-div {
+    width: 90%;
+    margin: auto;
+    min-height: 100px;
+    border: 2px solid grey;
+}
+
+#third-player-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.inner-third-div img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.inner-third-div img:hover {
+    box-shadow: 2px 5px 20px grey;
+}
+
+#third-result-div {
+    margin: 10px;
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: scale(0);
+    font-size: 3rem;
+    color: grey;
+    font-weight: bold;
+    border: 1px solid grey;
+    text-transform: capitalize;
+}
+
+
+/* <!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------4th problem-------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--> */
+#fourth-div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#fourth-innerDiv {
+    width: 90%;
+    margin: auto;
+    min-height: 70px;
+    border: 2px solid grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.fourth-select {
+    background: #d0cfcfa4;
+    font-size: 20px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    letter-spacing: .2px;
+    cursor: pointer;
+    outline: none;
+    text-transform: capitalize;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.fourth-option {
+    background: white;
+    font-size: 15px;
+}
+
+.btn-41 {
+    background: #DB0000;
+}
+
+.btn-42 {
+    background: #0097DD;
+}
+
+
+.btn-43 {
+    background: #00AB2D;
+}
+
+.btn-44 {
+    background: #A0A0A0;
+}
+
+.btn-45 {
+    background: #FFC74C;
+}
+
+.btn-Red {
+    background: #DB0000;
+}
+
+
+.btn-Blue {
+    background: #0097DD;
+}
+
+
+.btn-Green {
+    background: #00AB2D;
+}
+
+
+.btn-Grey {
+    background: #A0A0A0;
+}
+
+
+.btn-Yellow {
+    background: #FFC74C;
+}
+
+
+.btn-Random {
+    background: #DB0000;
+}
+
+
+
+/* <!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------5th problem-------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--> */
+#fifth-div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.fifth-letsPlay {
+    text-align: center;
+    font-size: 2rem;
+    color: grey;
+    padding: 10px 0;
+    border: 2px solid grey;
+}
+
+.fifth-board {
+    padding: 10px 0;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    background: rgb(16, 70, 25);
+}
+
+.fifth-left,
+.fifth-right {
+    width: 50%;
+    height: 100%;
+    border: 2px solid black;
+}
+
+.fifth-you,
+.fifth-dealer {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    height: 10%;
+}
+
+#your-box,
+#dealer-box {
+    background: red;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#your-box img,
+#dealer-box img {
+    width: 150px;
+    height: 180px;
+    margin: 10px 40px;
+}
+
+#fifth-btn-div {
+    background: rgb(16, 70, 25);
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#fifth-btn-div button {
+    margin: 0 10px;
+}
+
+.btn-51 {
+    background: #A0A0A0;
+}
+
+
+.btn-52 {
+    background: #FFC74C;
+}
+
+
+.btn-53 {
+    background: #DB0000;
+}
+
+#fifth-result-div {
+    border: 2px solid grey;
+    padding: 10px;
+}
+
+#fifth-result-div-grid {
+    width: 210px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    grid-template-rows: repeat(2, 30px);
+    text-align: center;
+}
+
+.fifth-grid-div {
+    border: 1px solid grey;
+}
+
+
+
+
+
+/* <!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------6th problem-------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--> */
+
+.jokeContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.jokeDiv {
+    margin: 20px 0;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: .2px;
+    text-align: center;
+    min-width: 80%;
+}
+
+.btn6 {
+    margin: 20px 0;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: rgb(168, 85, 85);
+    color: white;
+    font-size: 1.3rem;
+}
+
+
+
+
+
+/* <!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------7th problem-------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--> */
+.container-7 {
+    min-height: 400px;
+}
+
+.inner-container-7 {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-7 {
+    background: rgb(85, 168, 85);
+    color: white;
+}
+
+#table_id {
+    margin-top: 20px;
+    min-width: 900px;
+}
+
+.btnTable7 {
+    background: rgb(85, 168, 85);
+    color: white;
+}
+
+#name7,
+#note7 {
+    width: 700px;
+    margin: 7px 0;
+    padding: 9px 18px;
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid grey;
+}
+
+#table_id a {
+    text-decoration: none;
+}
+
+.modalInput {
+    width: 100%;
+    margin: 7px 0;
+    padding: 9px 18px;
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid grey;
+}
+
+
+
+
+/* <!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------8th problem-------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--> */
+.container-8 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.div-8 {
+    padding: 10px;
+    margin: 4px 0;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+.div-8 div {
+    padding: 0px 10px;
+    width: auto;
+    margin: 5px auto;
+    display: inherit;
+    align-items: center;
+}
+
+.div-8 div span {
+    font-size: 18px;
+    letter-spacing: .2px;
+}
+
+.div-8 div input {
+    width: 50px;
+    margin: 0 10px;
+    outline: none;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid grey;
+}
+
+.btn-8 {
+    margin: 2px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    outline: none;
+    background: rgba(255, 0, 0, 0.445);
+    color: white;
+    font-size: 1.3rem;
+}
+
+.form8 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 6px 0;
+    font-size: 20px;
+    justify-content: space-around;
+}
+
+.form8 div {
+    display: inherit;
+    flex-direction: column;
+    width: 90%;
+}
+
+.form8 div span {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form8 div span input {
+    width: 15px;
+}
+
+.pass1-8 {
+    margin: 2PX;
+    width: 100%;
+    min-height: 20px;
+    font-size: 20px;
+    letter-spacing: .2px;
+    text-align: center;
+}
+
+
+
+
+/* <!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------9th problem-------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--> */
+
+.container-9 {
+    background-color: white;
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px 100px;
+}
+
+.progress {
+    margin: 30px 0;
+}
+
+#clockDiv {
+    background-color: #315EA4;
+    width: 60%;
+    margin: 20px auto;
+    border-radius: 20px;
+    position: relative;
+    z-index: 10;
+    color: white;
+}
+
+#clockDiv::after {
+    content: '';
+    display: flex;
+    width: 103%;
+    height: 110%;
+    background: #315da48a;
+    top: -5%;
+    left: -1.5%;
+    position: absolute;
+    z-index: -1;
+    border-radius: 20px;
+}
+
+#clockDiv div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #315EA4;
+    border-radius: 15px;
+}
+
+#clockDiv div div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #315EA4;
+}
+
+#clockDiv span {
+    font-size: 5rem;
+    margin: 10px 8px;
+}
+
+#alarmDiv9 {
+    border: 2px solid #315EA4;
+    width: 90%;
+    padding-top: 100px;
+    min-height: 300px;
+    border-radius: 20px;
+    margin: -100px auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #315EA4;
+    font-size: 25px;
+    position: relative;
+    z-index:1;
+}
+
+#alarmDiv9 div {
+    width: 700px;
+}
+
+.inputDiv9 {
+    border-right: 2px solid #315EA4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.info9 {
+    margin: 10px 0;
+    text-align: center;
+}
+
+#alarmDiv9 input {
+    padding: 10px;
+    width: 60px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid grey;
+}
+
+.alarmgif {
+    width: 200px;
+}
+
+.alarmBtn {
+    margin: 2px 10px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    outline: none;
+    background: rgba(0, 255, 234, 0.445);
+    color: white;
+    font-size: 1rem;
+}
+
+.alarmBtn2 {
+    margin: 2px 10px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    outline: none;
+    background: rgba(255, 0, 0, 0.589);
+    color: white;
+    font-size: 1rem;
+}

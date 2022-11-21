@@ -1,0 +1,30 @@
+extends base.pug
+
+block scripts
+    script(src='../static/script.js')
+block style
+    style
+        include ../static/css/home.css
+    
+block firstcontainer    
+    section#bgcontainer
+        #bgdiv
+            h1 Welcome To the DanceAcademy 
+            h3 Live Dance Sleep Repeat
+                
+block secondcontainer 
+    h1#primary Our Missions
+    section#cards-container
+        div#cards       
+            h2 Solo Dance
+            img(src='../static/images/01.png')
+            p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis culpa ad, vel quis exercitatione
+        div#cards       
+            h2 HipHop Dance
+            img(src='../static/images/03.png')
+            p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis culpa ad, vel quis exercitatione
+        div#cards       
+            h2 Pair Dance
+            img(src='../static/images/04.png')
+            p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis culpa ad, vel quis exercitatione
+            

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css file -->
+    <link rel="stylesheet" href="../style/style.css">
+
+    <!--Get your code at fontawesome.com-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- fontawesome account kit -->
+    <script src="https://kit.fontawesome.com/85426e13d7.js" crossorigin="anonymous"></script>
+
+    <!-- title name -->
+    <title>PinkSale - The Launchpad Protocol for Everyone!</title>
+</head>
+
+<body>
+
+
+    <!-- horizontal navbar section -->
+    <section id="h-nav-section">
+        <nav id="h-nav">
+            <ul>
+                <div id="nav-div">
+                    <!-- <i class="fa fa-2x">&#xf0c9;</i> -->
+                    <!-- <i class="fa fa-2x">&#xf142;</i> -->
+                    <img id='nav-div-img' src="../images/menu.png" alt="" >
+
+                </div>
+                <div id="logo-div">
+                    <img src="../images/logo01.png" alt="">
+                    <div class="font">PinkSale</div>
+                </div>
+                <div id="last-div">
+                    <div class="first">
+                        <img src="../images/logo2.png" alt="">
+                        <span data-bs-toggle="modal" data-bs-target="#mainnetModal">
+                            BSC MAINNET
+                        </span>
+                    </div>
+                    <div class="second"><a href="#" data-bs-toggle="modal" data-bs-target="#connectModal">Connect</a>
+                    </div>
+                </div>
+
+                <!-- modal for mainnet -->
+                <div class="modal fade" id="mainnetModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Choose Network</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="cards-mainnet">
+                                    <img src="../images/mainnet/mainnet1.svg" alt="">
+                                    <h5>Ethereum</h5>
+                                </div>
+                                <div class="cards-mainnet">
+                                    <img src="../images/mainnet/mainnet2.png" alt="">
+                                    <h5>BNB Smart Chain</h5>
+                                </div>
+                                <div class="cards-mainnet">
+                                    <img src="../images/mainnet/mainnet3.png" alt="">
+                                    <h5>Matic(Polygon)</h5>
+                                </div>
+                                <div class="cards-mainnet">
+                                    <img src="../images/mainnet/mainnet4.svg" alt="">
+                                    <h5>Avalanche</h5>
+                                </div>
+                                <div class="cards-mainnet">
+                                    <img src="../images/mainnet/mainnet5.svg" alt="">
+                                    <h5>Fantom Opera</h5>
+                                </div>
+                                <div class="cards-mainnet">
+                                    <img src="../images/mainnet/mainnet6.svg" alt="">
+                                    <h5>Cronos</h5>
+                                </div>
+                                <div class="cards-mainnet">
+                                    <img src="../images/mainnet/mainnet7.png" alt="">
+                                    <h5>DodgeChain</h5>
+                                </div>
+                                <div class="cards-mainnet">
+                                    <img src="../images/mainnet/mainnet8.png" alt="">
+                                    <h5>TestNet</h5>
+                                </div>
+                                <div class="cards-mainnet">
+                                    <img src="../images/mainnet/mainnet9.png" alt="">
+                                    <h5>BNB Smart Chain</h5>
+                                </div>
+                                <div class="cards-mainnet">
+                                    <img src="../images/mainnet/mainnet10.png" alt="">
+                                    <h5>Matic Mumbai</h5>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal for connect -->
+                <div class="modal fade" id="connectModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <p class="modal-title" id="exampleModalLabel">Connect to a Wallet</p>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="cards-modal">
+                                    <img src="../images/connect/connect1.svg" alt="">
+                                    <h5>Install metaMask</h5>
+                                </div>
+                                <div class="cards-modal">
+                                    <img src="../images/connect/connect2.svg" alt="">
+                                    <h5>Trustwallet</h5>
+                                </div>
+                                <div class="cards-modal">
+                                    <img src="../images/connect/connect3.svg" alt="">
+                                    <h5>WalletConnect</h5>
+                                </div>
+                                <div class="cards-modal">
+                                    <img src="../images/connect/connect4.png" alt="">
+                                    <h5>Coinbase Wallet</h5>
+                                </div>
+                                <div class="cards-modal">
+                                    <img src="../images/connect/connect5.jpg" alt="">
+                                    <h5>SafePal Wallet</h5>
+                                </div>
+                                <div class="cards-modal">
+                                    <img src="../images/connect/connect6.png" alt="">
+                                    <h5>TockenPocket</h5>
+                                </div>
+                                <div class="cards-modal">
+                                    <img src="../images/connect/connect7.png" alt="">
+                                    <h5>Math Wallet</h5>
+                                </div>
+                                <div class="cards-modal">
+                                    <img src="../images/connect/connect8.png" alt="">
+                                    <h5>Install BitKeep</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </section>
+
+
+    <!-- main body section -->
+    <section id="main-container">
+        <div id="left">
+            <div id="left-scrollable">  
+                <div class="left-cards">
+                    <img src="../images/navbar/home.png" alt="">
+                    <span class="span-display">Home</span>
+                </div>
+                <div class="left-cards">
+                    <img src="../images/navbar/rocket.png" alt="">
+                    <span class="span-display">Launchpads</span>
+                </div>
+                <div class="left-cards">
+                    <img src="../images/navbar/shield.png" alt="">
+                    <span class="span-display">Private Sale</span>
+                </div>
+                <div class="left-cards">
+                    <img src="../images/navbar/unlocked.png" alt="">
+                    <span class="span-display">Pinklock</span>
+                </div>
+                <div class="left-cards">
+                    <img src="../images/navbar/hot-air-balloon.png" alt="">
+                    <span class="span-display">Airdrop</span>
+                </div>
+                <div class="left-cards">
+                    <img src="../images/navbar/crown.png" alt="">
+                    <span class="span-display">Leaderboard</span>
+                </div>
+                <div class="left-cards">
+                    <img src="../images/navbar/shield check.png" alt="">
+                    <span class="span-display">Anti-Bot</span>
+                </div>
+                <div class="left-cards">
+                    <img src="../images/navbar/arrow.png" alt="">
+                    <span class="span-display">Multi-Sender</span>
+                </div>
+                <div class="left-cards">
+                    <img src="../images/navbar/bot.png" alt="">
+                    <span class="span-display">Pools Alert</span>
+                </div>
+                <div class="left-cards">
+                    <img src="../images/navbar/fiel1.png" alt="">
+                    <span class="span-display">KYC & Audit</span>
+                </div>
+                <div class="left-cards">
+                    <img src="../images/navbar/file2.png" alt="">
+                    <span class="span-display">Docs</span>
+                </div>
+                <div class="left-cards">
+                    <img src="../images/navbar/telegram.png" alt="">
+                    <span class="span-display">Telegram</span>
+                </div>
+                <div class="left-cards">
+                    <img src="../images/navbar/twitter.png" alt="">
+                    <span class="span-display">Twitter</span>
+                </div>  
+                <div class="left-cards">
+                    <img src="../images/navbar/facebook.png" alt="">
+                    <span class="span-display">Facebook</span>
+                </div>
+            </div>
+            
+            <div id="last-left-card">
+                <div id="first-side">
+                    <img src="../images/logo01.png" alt="">
+                    <img src="../images/navbar/langauge.png" alt="">
+                </div>
+                <div id="second-side">
+                    <div id="rowone">
+                        <p id="rowone-pinksale">PINKSALE</p>
+                        <p id="rowone-dollar">$220.89</p>
+                    </div>
+                    <div id="rowtwo">
+                        <p>English</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="right">
+            <!-- trending container -->
+            <div id="trending-container">
+                <div id="trending">
+                    <img src="../images/trend.png" alt="">
+                    Trending
+                </div>
+                <div>#1 <span>TCat</span></div>
+                <div>#2 <span>SHF</span></div>
+                <div>#3 <span>GreatDaneN</span></div>
+                <div>#4 <span>GLD</span></div>
+                <div>#5 <span>HEL</span></div>
+                <div>#6 <span>SPC</span></div>
+                <div>#7 <span>SPC</span></div>
+                <div>#8 <span>SMN</span></div>
+                <div>#9 <span>ZEBRA</span></div>
+                <div>#10 <span>BLOODVANIA</span></div>
+                <div>#11 <span>SYMP</span></div>
+                <div>#12 <span>POLKAS</span></div>
+                <div>#13 <span>FTY</span></div>
+            </div>
+
+            <!-- launch pad protocol -->
+            <div id="protocol-container">
+                <div id="first-protocol">
+                    <h1>The Launchpad Protocol for Everyone!</h1>
+                    <p>PinkSale helps everyone to create their own tokens and token sales in few seconds.
+                    </p>
+                    <p>Tokens created on PinkSale will be verified and published on explorer websites.</p>
+                    <div id="btndiv">
+                        <div>Create Now</div>
+                        <div>learn Now</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- cards section -->
+            <div id="cards-container">
+                <div class="cards">
+                    <h1>$246.3M</h1>
+                    <p>Total Liquidity Raised</p>
+                </div>
+                <div class="cards">
+                    <h1>13084</h1>
+                    <p>Total Projects</p>
+                </div>
+                <div class="cards">
+                    <h1>1.4M</h1>
+                    <p>Total Participants</p>
+                </div>
+                <div class="cards">
+                    <h1>$335.8M</h1>
+                    <p>Total Values Locked</p>
+                </div>
+            </div>
+
+            <!-- suite tools section -->
+            <div id="suite-container">
+                <h1 id="heading-suite">A Suite of Tools for Token Sales.</h1>
+                <p>A suite of tools were built to help you create your own tokens and launchpads in a fast, simple</p>
+                <p>and cheap way, with no prior code knowledge required and 100% decentralized!</p>
+                <div id="suite-cards-div">
+                    <div class="suite-cards">
+                        <img src="../images/suite-img.png" alt="">
+                        <h1>Standard</h1>
+                        <p>Mint standard tokens on ETH, BSC, AVAX, Fantom, Polygon.</p>
+                    </div>
+                    <div class="suite-cards">
+                        <img src="../images/suite-img.png" alt="">
+                        <h1>Deflationary</h1>
+                        <p>Generate deflationary tokens with tax and/or charity functions.</p>
+                    </div>
+                    <div class="suite-cards">
+                        <img src="../images/suite-img.png" alt="">
+                        <h1>Customization</h1>
+                        <p>Create a token sale for your own custom token easily.</p>
+                    </div>
+                    <div class="suite-cards">
+                        <img src="../images/suite-img.png" alt="">
+                        <h1>Launchpad</h1>
+                        <p>Use the token you mint to create a launchpad with just a few clicks.</p>
+                    </div>
+                    <div class="suite-cards">
+                        <img src="../images/suite-img.png" alt="">
+                        <h1>Branding</h1>
+                        <p>Adding logo, social links, description, listing on PinkSale.</p>
+                    </div>
+                    <div class="suite-cards">
+                        <img src="../images/suite-img.png" alt="">
+                        <h1>Management</h1>
+                        <p>The portal to help you easily update content for your launchpad.</p>
+                    </div>
+                    <div class="suite-cards">
+                        <img src="../images/suite-img.png" alt="">
+                        <h1>Community</h1>
+                        <p>Promote your launchpad to thousands of buyers on PinkSale.</p>
+                    </div>
+                    <div class="suite-cards">
+                        <img src="../images/suite-img.png" alt="">
+                        <h1>Locking</h1>
+                        <p>Lock your liquidity to PinkSwap, PancakeSwap after presale.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- A Growing Protocol Ecosystem. -->
+            <div id="protocol-container">
+                <div id="heading">A Growing Protocol Ecosystem.</div>
+                <div id="para">We build a suite of tools for the world of decentralized finance. PinkMoon, PinkSale,
+                    PinkElon PinkLock, PinkSwap, we Pink everything!</div>
+                <div id="protocol-cards-container">
+                    <div class="protocol-cards">
+                        <img src="../images/suite-img.png" alt="">
+                        <div id="heading">PinkMoon</div>
+                        <div id="para">The best launchpad for professional teams</div>
+                    </div>
+                    <div class="protocol-cards">
+                        <img src="../images/suite-img.png" alt="">
+                        <div id="heading">PinkSale</div>
+                        <div id="para">Launch a token sale with a few clicks.</div>
+                    </div>
+                    <div class="protocol-cards">
+                        <img src="../images/suite-img.png" alt="">
+                        <div id="heading">PinkSwap</div>
+                        <div id="para">Swap tokens and farming $PinkS.</div>
+                    </div>
+                    <div class="protocol-cards">
+                        <img src="../images/suite-img.png" alt="">
+                        <div id="heading">PinkLock</div>
+                        <div id="para">Locking liquidity on PinkSwap.</div>
+                    </div>
+                </div>
+
+                <div id="protocol-2cards-container">
+                    <div class="protocol-2cards">
+                        <img src="../images/suite-img.png" alt="">
+                        <div id="heading2">PinkElon</div>
+                        <div id="para2">The first meme token on PinkMoon.</div>
+                    </div>
+                    <div class="protocol-2cards">
+                        <img src="../images/suite-img.png" alt="">
+                        <div id="heading2">PinkWallet</div>
+                        <div id="para2">Crypto wallet, buy, store, exchange & earn.</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- footer disclaimer -->
+            <footer id="footer">
+                <div id="para-footer"><b>Disclaimer:</b> The information provided shall not in any way constitute a
+                    recommendation as to whether you should invest in any product discussed. We accept no liability for
+                    any loss occasioned to any person acting or refraining from action as a result of any material
+                    provided or published. </div>
+            </footer>
+        </div>
+    </section>
+
+    <script src="../script/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

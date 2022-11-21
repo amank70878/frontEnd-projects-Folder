@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bgcolor: rgba(61, 14, 14, 0.911); 
+}
+#navbar{
+    background: var(--bgcolor);
+    width: 100vw;
+}
+#navbar ul{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+#navbar ul li{
+    margin: 3px 10px;
+    list-style: none;
+    padding: 4px 7px;
+}
+#navbar ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 9px;
+    padding: 2px 5px;
+    border: 2px solid white;
+}
+#navbar ul li a:hover{
+    border: 2px solid rgb(255, 255, 255);
+    background: white;
+    color: black;
+}
+
+#container::before{
+    content: "";
+    position: absolute;
+    background: url(bg.jpg);
+    top: 0; 
+    left: 0;
+    width: 100vw;
+    height: 80vh;
+    z-index: -1; 
+    opacity: 0.5; 
+}
+#inner-container{
+    border: 2px solid black;
+    width: 80vw;
+    background: var(--bgcolor);
+    /* background: url(/demo/views/img.jpg) no-repeat center center/cover; */
+    margin:0px auto;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+
+#inner-container h1{
+    text-align: center;
+    color: white;
+    padding: 20px 0px;
+}
+#inner-container form{
+    display: flex;
+    flex-direction: column;
+}
+#inner-container form input{ 
+    width: 68%;
+    margin: 10px auto;
+    font-size: 15px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+#inner-container form textarea{
+    border: 2px solid black;
+    width: 68%;
+    margin: 10px auto;
+    font-size: 15px;
+    padding: 8px 12px;
+    border-radius: 8px;
+} 
+#inner-container form .btn{
+    margin: 10px auto;
+    font-size: 18px;
+    border-radius: 9px;
+    padding: 4px 15px;
+    border: 3px solid white;
+    background: var(--bgcolor);
+    color: white;
+}
+#inner-container form .btn:hover{
+    border: 3px solid rgb(255, 255, 255);
+    background: white;
+    color: black;
+}

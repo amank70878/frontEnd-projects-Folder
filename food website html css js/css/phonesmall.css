@@ -1,0 +1,137 @@
+#navbar .logo img{
+    width: 33px;
+    height: 33px;
+    margin: 0px 15px;
+    border-radius: 100px;
+}
+#navbar ul{
+    margin: 0px 0px ;
+    display: flex;
+    font-family: 'Baloo bhai' , cursive;
+}
+#navbar ul li a{
+    color: white;
+    padding: 0px 5px;
+    border-radius: 18px;
+    text-decoration: none;   
+}
+
+/* home container */
+#home-section::before{
+    height: 400px;
+}
+#home-section .home-container{
+    height: 400px;
+}
+.home-container button{
+    margin-top: 5px;
+}
+
+
+
+/* services */
+#services-h1{
+    font-size: 1.5rem;
+}
+#services{
+    width: 100vw;
+    display: flex ;
+    justify-content: space-evenly;
+}
+#services .services-container{
+    width: 95vw;
+    margin: 5px 0px;
+}
+#services .services-container img{
+    width: 130px;
+    height: 111px;
+    margin: 5px auto;
+}
+#services .services-container h2{
+    font-size: 1.3rem;  
+}
+#services .services-container p{
+    font-size: 0.9rem;
+}
+
+
+
+
+/* clients section starts */
+#clients-h1{
+    margin-top: 5px;
+}
+#clients{
+    flex-wrap: wrap;
+}
+#clients .img-clients img{
+    height: 3rem;
+}
+
+
+
+
+/* Contacts us starts  */
+#contacts::before{
+    width: 100vw; 
+    height: 425px;
+}
+#contacts form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+#contacts form input{
+    margin: 5px;
+    font-size: 0.7rem;
+}
+#contacts form textarea{
+    padding: 8px;
+    font-size: 0.7rem;
+}
+
+
+
+/* footer section starts */
+#footer footer{
+    padding: 10px 5px;
+    background: black;
+    color: white;
+    margin-top: 10px;
+    font-size: 0.5rem;
+}
+
+
+
+
+
+
+
+
+/* utilities css */
+.primary-text{
+    font-size: 2rem;
+}  
+.secondary-text{
+    font-size: 0.6rem;
+    padding: 5px 10px;
+    line-height: 1.6;
+    font-weight: bold;
+}
+.center{
+    text-align: center;
+}
+.btn{
+    font-weight: bold;
+    font-size: 0.7rem;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.btn:hover{
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+}

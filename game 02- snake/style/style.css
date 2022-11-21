@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'New Tegomin', serif;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board {
+    display: grid;
+    background: linear-gradient(rgb(129, 229, 129), rgb(243, 233, 233));
+    width: 42vw;
+    height: 42vw;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head {
+    background: linear-gradient(rgb(89, 40, 130), rgb(38, 26, 129));
+    border-radius: 10px;
+}
+
+.snakebody {
+    background: linear-gradient(rgb(109, 66, 145), rgb(168, 70, 122));
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.food {
+    background: linear-gradient(rgb(70, 145, 80), rgb(20, 134, 20));
+    border-radius: 10px;
+}
+
+.score-div {
+    position: absolute;
+    top: 40px;
+    right: 5vw;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* for upto 945px screen */
+@media screen and (max-width: 945px) {
+    .board {
+        width: 70%;
+        height: 80%;
+    }
+
+    .score-div {
+        position: absolute;
+        top: 0px;
+        right: 40%;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+}
+
+/* for upto 700px screen */
+@media screen and (max-width: 700px) {
+
+    .board {
+        width: 95%;
+        height: 60%;
+    }
+
+}

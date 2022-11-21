@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="../style/style.css"> <!-- css link -->
+    <title>Gogoanime Official Website: Watch Anime online</title>
+</head>
+
+<body>
+    
+    <section id="navbarSection">
+        <!-- navbar section code snippet -->
+        <a href="#navbarSection">
+            <i class="fas fa-bars fa-2x nav-i" onclick="navtoggle()"></i>
+        </a>
+        <nav onclick="hide()" onscroll="scroll()">
+            <ul>
+                <div id="navlogo">
+                    <img src="../images/logonav.png" alt="">
+                </div>
+                <div id="searchbar">
+                    <input type="text" name="" id="" placeholder="Search anime...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </ul>
+        </nav>
+        
+        <div id="verticalNav">
+            <div class="firstsixcards">
+                <i class="far fa-user vnav-i"></i>
+                <span>Login | Sign Up</span>
+            </div>
+            <div class="firstsixcards">
+                <i class="fas fa-home vnav-i " style="color:#ffc119;"></i>
+                <span class="active">Home</span>
+            </div>
+            <div class="firstsixcards">
+                <i class="fas fa-list vnav-i"></i>
+                <img src="" alt="">
+                <span>Anime List</span>
+            </div>
+            <div class="firstsixcards">
+                <i class="fas fa-tv vnav-i"></i>
+                <span>New Season</span>
+            </div>
+            <div class="firstsixcards">
+                <i class="fas fa-film vnav-i"></i>
+                <span>Movies</span>
+            </div>
+            <div class="firstsixcards">
+                <i class="fas fa-star vnav-i"></i>
+                <span>Popular</span>
+            </div>
+            <div id="genreVertical">
+                <i class="fas fa-theater-masks vnav-i"></i>
+                <span class="genre-class">Genre</span>
+                <div class="genreverticalcards">
+                    <div class="genreverticalspan">Action</div>
+                    <div class="genreverticalspan">Cars</div>
+                    <div class="genreverticalspan">Dementia</div>
+                    <div class="genreverticalspan">Drama</div>
+                    <div class="genreverticalspan">Fantasy</div>
+                    <div class="genreverticalspan">Harem</div>
+                    <div class="genreverticalspan">Horror</div>
+                    <div class="genreverticalspan">Josei</div>
+                    <div class="genreverticalspan">Magic</div>
+                    <div class="genreverticalspan">Mecha</div>
+                    <div class="genreverticalspan">Music</div>
+                    <div class="genreverticalspan">Parody</div>
+                    <div class="genreverticalspan">Psychological</div>
+                    <div class="genreverticalspan">Samurai</div>
+                    <div class="genreverticalspan">Sci-Fi</div>
+                    <div class="genreverticalspan">Shoujo</div>
+                    <div class="genreverticalspan">Shounen</div>
+                    <div class="genreverticalspan">Slice Of Life</div>
+                    <div class="genreverticalspan">Sports</div>
+                    <div class="genreverticalspan">Supernatural</div>
+                    <div class="genreverticalspan">Vampire</div>
+                    <div class="genreverticalspan">Yuri</div>
+                    <div class="genreverticalspan">Family</div>
+                    <div class="genreverticalspan">Adventure</div>
+                    <div class="genreverticalspan">Comedy</div>
+                    <div class="genreverticalspan">Demons</div>
+                    <div class="genreverticalspan">Ecchi</div>
+                    <div class="genreverticalspan">Game</div>
+                    <div class="genreverticalspan">Historical</div>
+                    <div class="genreverticalspan">Isekai</div>
+                    <div class="genreverticalspan">Kids</div>
+                    <div class="genreverticalspan">Martial Arts</div>
+                    <div class="genreverticalspan">Military</div>
+                    <div class="genreverticalspan">Mystery</div>
+                    <div class="genreverticalspan">Police</div>
+                    <div class="genreverticalspan">Romance</div>
+                    <div class="genreverticalspan">School</div>
+                    <div class="genreverticalspan">Seinen</div>
+                    <div class="genreverticalspan">Shoujo Ai</div>
+                    <div class="genreverticalspan">Shounen Ai</div>
+                    <div class="genreverticalspan">Space</div>
+                    <div class="genreverticalspan">Super Power</div>
+                    <div class="genreverticalspan">Thriller</div>
+                    <div class="genreverticalspan">Yasoi</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="narutoLogo" onclick="hide()">
+        <!-- recently updated navbar section code snippet -->
+        <div id="narutoimg"></div>
+        <h1>RECENTLY UPDATED</h1>
+        <div id="narutoBg"></div>
+    </section>
+    
+    <section id="recentlyCardsSection" onclick="hide()">
+        <!-- recently updated cards section code snippet-->
+        <div class="cards">
+            <img src="../images/recently uploaded/1.jpg" alt="">
+            <div id="text">
+                <span class="name-cards">One Piece</span>
+                <span class="epi-cards">Episode 1035</span>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="../images/recently uploaded/2.jpg" alt="">
+            <div id="text">
+                <span class="name-cards">Naruto</span>
+                <span class="epi-cards">Episode 220</span>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="../images/recently uploaded/3.jpg" alt="">
+            <div id="text">
+                <span class="name-cards">Naruto Shippuden</span>
+                <span class="epi-cards">Episode 500</span>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="../images/recently uploaded/4.jpg" alt="">
+            <div id="text">
+                <span class="name-cards">Bleach</span>
+                <span class="epi-cards">Episode 366</span>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="../images/recently uploaded/5.jpg" alt="">
+            <div id="text">
+                <span class="name-cards">Dragon Ball</span>
+                <span class="epi-cards">Episode 131</span>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="../images/recently uploaded/6.jpg" alt="">
+            <div id="text">
+                <span class="name-cards">Death Note</span>
+                <span class="epi-cards">Episode 37</span>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="../images/recently uploaded/7.jpg" alt="">
+            <div id="text">
+                <span class="name-cards">Akame ga Kill</span>
+                <span class="epi-cards">Episode 24</span>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="../images/recently uploaded/8.jpg" alt="">
+            <div id="text">
+                <span class="name-cards">Hunter X Hunter </span>
+                <span class="epi-cards">Episode 62</span>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="../images/recently uploaded/9.jpg" alt="">
+            <div id="text">
+                <span class="name-cards">Your Lie In April</span>
+                <span class="epi-cards">Episode 22</span>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="../images/recently uploaded/10.jpg" alt="">
+            <div id="text">
+                <span class="name-cards">Your Name</span>
+                <span class="epi-cards">Episode 1</span>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="../images/recently uploaded/11.jpg" alt="">
+            <div id="text">
+                <span class="name-cards">A Certain Magical Index</span>
+                <span class="epi-cards">Episode 24</span>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="../images/recently uploaded/12.jpg" alt="">
+            <div id="text">
+                <span class="name-cards">Rascal does not dream of bunny..</span>
+                <span class="epi-cards">Episode 13</span>
+            </div>
+        </div>
+        
+    </section>
+    
+    <section id="sasukeLogo">
+        <!-- recently added navbar section code snippet -->
+        <div id="sasukeimg"></div>
+        <h1>RECENTLY ADDED</h1>
+        <div id="sasukeBg"></div>
+    </section>
+    
+    <section id="addedcardsSection">
+        <!-- recently added navbar section code snippet -->
+        <div class="cards">
+            <div class="left">
+                <img src="../images/recently added/1.jpg" alt="">
+            </div>
+            <div class="right">
+                <span class="heading">Esper Mami: Hoshizora no Dancing Doll</span>
+                <div class="genre">Genres: <span>Fantasy, Shounen</span></div>
+                <span class="latest">Latest:<p>Episode 1</p></span>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="left">
+                <img src="../images/recently added/2.jpg" alt="">
+            </div>
+            <div class="right">
+                <span class="heading">Megaton-Kyuu Musashi</span>
+                <div class="genre">Genres: <span>Action, Mecha, School, Sci-Fi</span></div>
+                <span class="latest">Latest:<p>Episode 13</p></span>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="left">
+                <img src="../images/recently added/3.jpg" alt="">
+            </div>
+            <div class="right">
+                <span class="heading">Please Take My Brother Away 5</span>
+                <div class="genre">Genres: <span>Comedy, School</span></div>
+                <span class="latest">Latest:<p>Episode 11</p></span>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="left">
+                <img src="../images/recently added/4.jpg" alt="">
+            </div>
+            <div class="right">
+                <span class="heading">Ya Boy Kongming!</span>
+                <div class="genre">Genres: <span>Comedy</span></div>
+                <span class="latest">Latest:<p>Episode 12</p></span>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="left">
+                <img src="../images/recently added/5.jpg" alt="">
+            </div>
+            <div class="right">
+                <span class="heading">Higurashi no Naku koro no Special: Nekogoroshi-hen</span>
+                <div class="genre">Genres: <span>Mystery</span></div>
+                <span class="latest">Latest:<p>Episode 1</p></span>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="left">
+                <img src="../images/recently added/6.jpg" alt="">
+            </div>
+            <div class="right">
+                <span class="heading">Fruits Basket: Prelude</span>
+                <div class="genre">Genres: <span>Drama, Romance</span></div>
+                <span class="latest">Latest:<p>Episode 1</p></span>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="left">
+                <img src="../images/recently added/7.jpg" alt="">
+            </div>
+            <div class="right">
+                <span class="heading">Tiger & Bunny 2 Part 2</span>
+                <div class="genre">Genres: <span>Action, Comedy, Mystery, Super Power</span></div>
+                <span class="latest">Latest:<p>Episode 12</p></span>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="left">
+                <img src="../images/recently added/8.jpg" alt="">
+            </div>
+            <div class="right">
+                <span class="heading">The Legend of Hei</span>
+                <div class="genre">Genres: <span>Adventures, Drama, Fantasy</span></div>
+                <span class="latest">Latest:<p>Episode 1</p></span>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="left">
+                <img src="../images/recently added/9.jpg" alt="">
+            </div>
+            <div class="right">
+                <span class="heading">Shadow House 2nd Season</span>
+                <div class="genre">Genres: <span>Slice of Life, Supernatural, Seinen</span></div>
+                <span class="latest">Latest:<p>Episode 12</p></span>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="left">
+                <img src="../images/recently added/10.jpg" alt="">
+            </div>
+            <div class="right">
+                <span class="heading">Higurashi no Naku Koro ni kaku: Outbreak</span>
+                <div class="genre">Genres: <span>Mystery, Horror, Psychological, Thriller</span></div>
+                <span class="latest">Latest:<p>Episode 1</p></span>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="left">
+                <img src="../images/recently added/11.jpg" alt="">
+            </div>
+            <div class="right">
+                <span class="heading">Okoshiyasu, Chitose-chan Recaps</span>
+                <div class="genre">Genres: <span>Comedy, Slice of Life, Josei</span></div>
+                <span class="latest">Latest:<p>Episode 2</p></span>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="left">
+                <img src="../images/recently added/12.png" alt="">
+            </div>
+            <div class="right">
+                <span class="heading">Life With an Ordinary Guy Who Reincarnated Into a Total Fantasy Knockout</span>
+                <div class="genre">Genres: <span>Adventure, Comedy, fantasy</span></div>
+                <span class="latest">Latest:<p>Episode 12</p></span>
+            </div>
+        </div>
+        <div id="line"> </div>
+    </section>
+    
+    <section id="hinataLogo">
+        <!-- upcoming navbar section code snippet -->
+        <div id="hinataimg"></div>
+        <h1>UPCOMING</h1>
+        <div id="hinataBg"></div>
+    </section>
+    
+    <section id="upcomingCardsSection">
+        <!-- upcoming cards section code snippet-->
+        <div class="upcomingCards">
+            Sayonara watashi no cramer Movie: First Touch
+        </div>
+        <div class="upcomingCards">
+            Yuri on ice the Movie: ICE adolescence
+        </div>
+        <div class="upcomingCards">
+            Four people and their respective Lies
+        </div>
+        <div class="upcomingCards">
+            Zero Seiki Movie 1: Emeraldas
+        </div>
+        <div class="upcomingCards">
+            My Life After i Became a dummy head mic one morning, Aru Asa Dummy daed mike....
+        </div>
+        <div class="upcomingCards">
+            Biao Ren
+        </div>
+        <div class="upcomingCards">
+            A Turtle's Shell is a human's Ribs
+        </div>
+        <div class="upcomingCards">
+            Break of dawn
+        </div>
+        <div class="upcomingCards">
+            To the only me who loved you
+        </div>
+        <div class="upcomingCards">
+            to all of you that i loved
+        </div>
+        <div class="upcomingCards">
+            Saezuru Tori Wa Habatakanai: The Storm Breaks
+        </div>
+        <div class="upcomingCards">
+            Suzume's Door-Locking
+        </div>
+        <div class="upcomingCards">
+            Kitarou Tanjou: Gegege no nazo
+        </div>
+        <div class="upcomingCards">
+            Niehime to kemono no ou
+        </div>
+        <div class="upcomingCards">
+            Hoshi of Girls' garden
+        </div>
+        <div class="upcomingCards">
+            I Have Refined Qi For 3000 Years!
+        </div>
+        <div class="upcomingCards">
+            Xing Yu Siwan Nian
+        </div>
+        <div class="upcomingCards">
+            Akira (Shin Anime)
+        </div>
+        <div class="upcomingCards">
+            Yousei Chii-tan*
+        </div>
+        <div class="upcomingCards">
+            Dragon Raja
+        </div>
+        <div class="upcomingCards">
+            Yuru Camp Movie
+        </div>
+        <div class="upcomingCards">
+            Zi Chuan
+        </div>
+        <div class="upcomingCards">
+            Zero Seiki Movie 2: Herlock
+        </div>
+        <div class="upcomingCards">
+            Zero Seiki Movie 3: Maetel
+        </div>
+        <div class="upcomingCards">
+            Code Geass: Dakkan no Z
+        </div>
+        <div class="upcomingCards">
+            The Solitary Castle in the Mirror
+        </div>
+        <div class="upcomingCards">
+            Maou Gakuin no Futekigousha: Shijou Saikyou no Maou no Shiso, Tensei shite Shison....
+        </div>
+        <div class="upcomingCards">
+            "Uchuu Senkan yamato" to lu Jidai: Seireki 2202-nen no Sentaku
+        </div>
+        <div class="upcomingCards">
+            Sword Art Online: Progressive - Scherzo Of Deep Night
+        </div>
+        <div class="upcomingCards">
+            yahari Ore no Seishun Love Comedy wa Machigatteiru. Kan OVA
+        </div>
+        <div class="upcomingCards">
+            THAT Time I Got Reincarnated as a slime: The Movie - Scarlet Bond
+        </div>
+        <div class="upcomingCards">
+            Akuma-Kun (Shun Anime)
+        </div>
+        <div class="upcomingCards">
+            Maou Gakuin no Futekigousha: Shijou Saikyou no Maou no Shisi, tensie shite Shison...
+        </div>
+        <div class="upcomingCards">
+            After School
+        </div>
+        <div class="upcomingCards">
+            Aria the Benedizione
+        </div>
+        <div class="upcomingCards">
+            On Air Dekinai!
+        </div>
+        <div id="lineUpcomingCards"></div>
+    </section>
+    
+    <section id="minatoLogo">
+        <!-- minato navbar section code snippet -->
+        <div id="minatoimg"></div>
+        <button id="day" onclick="dayclick()">
+            <h1>DAY</h1>
+        </button>
+        |
+        <button id="week" onclick="weekclick()">
+            <h1>WEEK</h1>
+        </button>
+        |
+        <button id="month" onclick="monthclick()">
+            <h1 >MONTH</h1>
+        </button>
+        <!-- </h1> -->
+        <div id="minatoBg"></div>
+    </section>
+    
+    <section id="dayUpdateSection">
+        <!--day week month section css here-->
+        <div id="daysection">
+            <div class="cardsDaySection">
+                <div class="rowfirst">
+                    <div class="number">1.</div>
+                    <h3 class="h3">My Hero Academia Season 6</h3>
+                </div>
+                <div class="episodes">Episode: 2</div>
+            </div>
+            <div class="cardsDaySection">
+                <div class="rowfirst">
+                    <div class="number">2.</div>
+                    <h3 class="h3">Aridureta Shokugyou de Sekai 2nd Season</h3>
+                </div>
+                <div class="episodes">Episode: 12</div>
+            </div>
+            <div class="cardsDaySection">
+                <div class="rowfirst">
+                    <div class="number">3.</div>
+                    <h3 class="h3">Haikyu!!</h3>
+                </div>
+                <div class="episodes">Episode: 25</div>
+            </div>
+            <div class="cardsDaySection">
+                <div class="rowfirst">
+                    <div class="number">4.</div>
+                    <h3 class="h3">The Great Jahy Will Not Be Defeated</h3>
+                </div>
+                <div class="episodes">Episode: 20</div>
+            </div>
+            <div class="cardsDaySection">
+                <div class="rowfirst">
+                    <div class="number">5.</div>
+                    <h3 class="h3">Jujutsu kaisen 0 Movie</h3>
+                </div>
+                <div class="episodes">Episode: 1</div>
+            </div>
+            <div class="cardsDaySection">
+                <div class="rowfirst">
+                    <div class="number">6.</div>
+                    <h3 class="h3">Demon Slayer: Entertainment District Arc</h3>
+                </div>
+                <div class="episodes">Episode: 11</div>
+            </div>
+            <div class="cardsDaySection">
+                <div class="rowfirst">
+                    <div class="number">7.</div>
+                    <h3 class="h3">Spy X Family, Part 2</h3>
+                </div>
+                <div class="episodes">Episode: 2</div>
+            </div>
+            <div class="cardsDaySection">
+                <div class="rowfirst">
+                    <div class="number">8.</div>
+                    <h3 class="h3">Management of Novice Alchemist</h3>
+                </div>
+                <div class="episodes">Episode: 1</div>
+            </div>
+            <div class="cardsDaySection">
+                <div class="rowfirst">
+                    <div class="number">9.</div>
+                    <h3 class="h3">War God System! I'm Counting On You</h3>
+                </div>
+                <div class="episodes">Episode: 12</div>
+            </div>
+            <div class="cardsDaySection">
+                <div class="rowfirst">
+                    <div class="number">10.</div>
+                    <h3 class="h3">Horimiya</h3>
+                </div>
+                <div class="episodes">Episode: 13</div>
+            </div>
+        </div>
+        
+        <!-- week section css here-->
+        <div id="weeksection">
+            <div class="cardsDaySection">
+                <div class="rowfirst">
+                    <div class="number">1.</div>
+                    <h3 class="h3">One Piece</h3>
+                </div>
+                <div class="episodes">Episode: 1035</div>
+            </div>
+            <div class="cardsDaySection">
+                <div class="rowfirst">
+                    <div class="number">2.</div>
+                    <h3 class="h3">Black Summoner</h3>
+                </div>
+                <div class="episodes">Episode: 12</div>
+            </div>
+            <div class="cardsDaySection">
+                <div class="rowfirst">
+                    <div class="number">3.</div>
+                    <h3 class="h3">Boruto: Naruto Next Generations</h3>
+                </div>
+                <div class="episodes">Episode: 270</div>
+            </div>
+            <div class="cardsDaySection">
+                <div class="rowfirst">
+                    <div class="number">4.</div>
+                    <h3 class="h3">Mob Psycho 100</h3>
+                </div>
+                <div class="episodes">Episode: 12</div>
+            </div>
+            <div class="cardsDaySection">
+                <div class="rowfirst">
+                    <div class="number">5.</div>
+                    <h3 class="h3">Jujutsu kaisen 0 Movie</h3>
+                </div>
+                <div class="episodes">Episode: 1</div>
+            </div>
+            <div class="cardsDaySection">
+                <div class="rowfirst">
+                    <div class="number">6.</div>
+                    <h3 class="h3">Shinobu no Ittoki</h3>
+                </div>
+                <div class="episodes">Episode: 1</div>
+            </div>
+            <div class="cardsDaySection">
+                <div class="rowfirst">
+                    <div class="number">7.</div>
+                    <h3 class="h3">Kingdom 4th Season</h3>
+                </div>
+                <div class="episodes">Episode: 26</div>
+            </div>
+            <div class="cardsDaySection">
+                <div class="rowfirst">
+                    <div class="number">8.</div>
+                    <h3 class="h3">Full Time Magister 4</h3>
+                </div>
+                <div class="episodes">Episode: 12</div>
+            </div>
+            <div class="cardsDaySection">
+                <div class="rowfirst">
+                    <div class="number">9.</div>
+                    <h3 class="h3">Golden kamuy Season 4</h3>
+                </div>
+                <div class="episodes">Episode: 2</div>
+            </div>
+            <div class="cardsDaySection">
+                <div class="rowfirst">
+                    <div class="number">10.</div>
+                    <h3 class="h3">Attack on Titam: Final Season,Part 2</h3>
+                </div>
+                <div class="episodes">Episode: 12</div>
+            </div>
+        </div>
+        
+        <!--  month section css here-->
+        <div id="monthsection">
+            <div class="cardsDaySection" id="monthsection">
+                <div class="rowfirst">
+                    <div class="number">1.</div>
+                    <h3 class="h3">One Piece</h3>
+                </div>
+                <div class="episodes">Episode: 1035</div>
+            </div>
+            <div class="cardsDaySection">
+                <div class="rowfirst">
+                    <div class="number">2.</div>
+                    <h3 class="h3">OverLoad 4</h3>
+                </div>
+                <div class="episodes">Episode: 13</div>
+            </div>
+            <div class="cardsDaySection">
+                <div class="rowfirst">
+                    <div class="number">3.</div>
+                    <h3 class="h3">Bleech</h3>
+                </div>
+                <div class="episodes">Episode: 366</div>
+            </div>
+            <div class="cardsDaySection">
+                <div class="rowfirst">
+                    <div class="number">4.</div>
+                    <h3 class="h3">Spy x Family</h3>
+                </div>
+                <div class="episodes">Episode: 12</div>
+            </div>
+            <div class="cardsDaySection">
+                <div class="rowfirst">
+                    <div class="number">5.</div>
+                    <h3 class="h3">Attack On Titan: Final Season, Part 2</h3>
+                </div>
+                <div class="episodes">Episode: 12</div>
+            </div>
+            <div class="cardsDaySection">
+                <div class="rowfirst">
+                    <div class="number">6.</div>
+                    <h3 class="h3">Full Time Magister 4</h3>
+                </div>
+                <div class="episodes">Episode: 12</div>
+            </div>
+            <div class="cardsDaySection">
+                <div class="rowfirst">
+                    <div class="number">7.</div>
+                    <h3 class="h3">My Stepsister is my Ex-Girlfriend</h3>
+                </div>
+                <div class="episodes">Episode: 12</div>
+            </div>
+            <div class="cardsDaySection">
+                <div class="rowfirst">
+                    <div class="number">8.</div>
+                    <h3 class="h3">Fire Force</h3>
+                </div>
+                <div class="episodes">Episode: 24</div>
+            </div>
+            <div class="cardsDaySection">
+                <div class="rowfirst">
+                    <div class="number">9.</div>
+                    <h3 class="h3">jujutsu Kaisen 0 Movie</h3>
+                </div>
+                <div class="episodes">Episode: 1</div>
+            </div>
+            <div class="cardsDaySection">
+                <div class="rowfirst">
+                    <div class="number">10.</div>
+                    <h3 class="h3">Naruto Shippuden</h3>
+                </div>
+                <div class="episodes">Episode: 500</div>
+            </div>
+        </div>
+        
+    </section>
+    
+    <section id="sakuraLogo">
+        <!-- ongoing series navbar section code snippet -->
+        <div id="sakuraimg"></div>
+        <h1>ONGOING SERIES</h1>
+        <div id="sakuraBg"></div>
+    </section>
+    
+    <section id="ongoingSection">
+        <!--ongoing section code snippet-->
+        <div class="ongoingCards">
+            <span>
+                A Gentle Dragon of 5000 Years Old, It Was Recognized as an Evil Dragon Without Any Cause
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                A Will Eternal
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                A World Worth Protecting
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Akiba Maid War
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Assault Lily: Fruits
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Bakugan: Evolutions
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Battle Through The Heavens 5th Season
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Beast Tamer
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Berserk: The Golden Age Arc - Memorial Edition
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                BeyWarriors: Cyborg
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Blade Runner: Black Lotus
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Blue Lock
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Bocchi the Rock!
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Bono Bono
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Boruto: Naruto Next Generations
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Burning Kabaddi
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Cap Revolution Bottleman DX
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Case Closed
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Chiikawa
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Delicious Party♡Precure
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Detective Conan: The Culprit Hanzawa
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Digimon Ghost Game
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Do It Yourself!!
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Doomsday with My Dog
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Doraemon (2005)
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Dragon Quest: Adventure of Dai (2020)
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Duel Masters King! [RAW]
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Encouragement of Climb: Next Summit
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Fairy Mountain
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Fushigi Dagashiya: Zenitendou
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Fuuto PI
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Ginga Eiyuu Densetsu: Die Neue These 4th Season
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                God Troubles Me
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Godzilla: Singular Point
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Golden Kamuy Season 4
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Good-bye, Cramer
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Housing Complex C
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                I Have Refined Qi For 3000 Years!
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                I Somehow Became Stronger by Raising Farming-Related Skills
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                I&#39;m the Villainess, So I&#39;m Taming the Final Boss
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                IDOLiSH7 Third BEAT! Part 2
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Immoral Guild
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Immoral Guild (Uncensored)
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Jade Dynasty
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Kakkou no Iinazuke Mini Anime
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Kenda Master Ken (TV)
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Knights of the Zodiac: Saint Seiya - Battle for Sanctuary
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Legend of Mana -The Teardrop Crystal-
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Let&#39;s Make a Mug Too
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Ling Jian Zun 4th Season
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Love Live! Superstar!! 2nd Season
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Lucifer and the Biscuit Hammer
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Management of Novice Alchemist
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Master of the Star Spring
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Mazica Party
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Mob Psycho 100 III
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Mobile Suit Gundam: The Witch from Mercury
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Muv-Luv Alternative 2nd Season
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                My Hero Academia Season 6
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                My Master Has No Tail
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Nights with a Cat
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Ninjala (TV)
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Norimono Man: Mobile Land no Car-kun
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Obey Me! 2nd Season
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Ojisan in Another World
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Okashi na Sabaku no Suna to Manu
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                One Piece
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Onipan!
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Perfect World
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Perman (1983)
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Pokemon Journeys: The Series
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Pokémon LEGENDS: Arceus
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Pop Team Epic 2nd Season
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Princess of the Bibliophile.
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Punirunes
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Raven of the Inner Palace
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Reincarnated as a Sword
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Reiwa no Di Gi Charat
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Shadowverse Flame
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Shin Chan
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Shine Post
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Shinobi no Ittoki
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Soul Land
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Spy x Family, Part 2
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Super Dragon Ball Heroes
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Super Dragon Ball Heroes: Big Bang Mission!!!
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Super Dragon Ball Heroes: Ultra God Mission
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Swallowed Star 2nd Season
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Swarm
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Sweet Bite Marks
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Tenchi Muyo! Ryo-Ohki 5th Season
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                The Daily Life of the Immortal King 3
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                The Eminence in Shadow
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                The Human Crazy University
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                The Legend and the Hero 4th Season
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                The Missing 8
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                The Story of Fengzhi Senla
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                The Sword of Dawn
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                The Tale of The Spirit Stone
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                The Tatami Time Machine Blues
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Thunderbolt Fantasy 3rd Season
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Tomb of Fallen Gods
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Utawarerumono: Futari no Hakuoro
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Uzaki-chan wa Asobitai! 2nd Season
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Vazzrock The Animation
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                War God System! I’m Counting On You!
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Warring States Of A Millenia
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Welcome to Demon School! Iruma-kun Season 3
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Yowamushi Pedal 5th Season
+            </span>
+        </div>
+        <div class="ongoingCards">
+            <span>
+                Yuu Gi Ou: Go Rush!!
+            </span>
+        </div>
+        
+    </section>
+    
+    <section id="nejiLogo">
+        <!-- neji navbar section code snippet -->
+        <div id="nejiimg"></div>
+        <h1>GENRES</h1>
+        <div id="nejiBg"></div>
+    </section>
+    
+    <section id="genreContainer">
+        <!--genre section code snippet-->
+        <div class="cardsGenre">Action</div>
+        <div class="cardsGenre">Cars</div>
+        <div class="cardsGenre">Dementia</div>
+        <div class="cardsGenre">Drama</div>
+        <div class="cardsGenre">Fantasy</div>
+        <div class="cardsGenre">Harem</div>
+        <div class="cardsGenre">Horror</div>
+        <div class="cardsGenre">Josei</div>
+        <div class="cardsGenre">Magic</div>
+        <div class="cardsGenre">Mecha</div>
+        <div class="cardsGenre">Music</div>
+        <div class="cardsGenre">Parody</div>
+        <div class="cardsGenre">Psychological</div>
+        <div class="cardsGenre">Samurai</div>
+        <div class="cardsGenre">Sci-Fi</div>
+        <div class="cardsGenre">Shoujo</div>
+        <div class="cardsGenre">Shounen</div>
+        <div class="cardsGenre">Slice Of Life</div>
+        <div class="cardsGenre">Sports</div>
+        <div class="cardsGenre">Supernatural</div>
+        <div class="cardsGenre">Vampire</div>
+        <div class="cardsGenre">Yuri</div>
+        <div class="cardsGenre">Family</div>
+        <div class="cardsGenre">Adventure</div>
+        <div class="cardsGenre">Comedy</div>
+        <div class="cardsGenre">Demons</div>
+        <div class="cardsGenre">Ecchi</div>
+        <div class="cardsGenre">Game</div>
+        <div class="cardsGenre">Historical</div>
+        <div class="cardsGenre">Isekai</div>
+        <div class="cardsGenre">Kids</div>
+        <div class="cardsGenre">Martial Arts</div>
+        <div class="cardsGenre">Military</div>
+        <div class="cardsGenre">Mystery</div>
+        <div class="cardsGenre">Police</div>
+        <div class="cardsGenre">Romance</div>
+        <div class="cardsGenre">School</div>
+        <div class="cardsGenre">Seinen</div>
+        <div class="cardsGenre">Shoujo Ai</div>
+        <div class="cardsGenre">Shounen Ai</div>
+        <div class="cardsGenre">Space</div>
+        <div class="cardsGenre">Super Power</div>
+        <div class="cardsGenre">Thriller</div>
+        <div class="cardsGenre">Yasoi</div>
+        <div id="lineGenre"></div>
+    </section>
+    
+    <section id="footer">
+        <div id="leftfooter">
+            <ul id="footer-ul">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Sitemap</a></li>
+            </ul>
+        </div>
+        <div id="rightfooter">
+            <a href="#navbarSection">
+                <img src="../images/footerup.png" alt="">
+            </a>
+            <span>BACK TO TOP</span>
+        </div>
+    </section>
+    <script src="../script/script.js"></script> <!-- javascript link-->
+</body>
+
+</html>
