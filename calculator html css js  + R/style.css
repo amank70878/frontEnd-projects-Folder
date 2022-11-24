@@ -4,10 +4,25 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
 .title h1 {
     font-size: 45px;
     text-align: center;
     margin: 20px;
+}
+
+.title small {
+    font-size: 20px;
+    text-align: center;
+}
+
+.bodyDiv {
+    border-top: 2px solid grey;
 }
 
 .body {
@@ -61,10 +76,15 @@ button:hover {
 
 @media only screen and (max-width: 572px) {
     .title h1 {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .textarea input {
         width: 70vw;
+    }
+    .title small {
+        margin-left: -14px;
+        font-size: 15px;
+        text-align: center;
     }
 }
