@@ -25,8 +25,8 @@ body {
 .board {
     display: grid;
     background: linear-gradient(rgb(129, 229, 129), rgb(243, 233, 233));
-    width: 42vw;
-    height: 42vw;
+    width: 95vh;
+    height: 95vh;
     grid-template-rows: repeat(18, 1fr);
     grid-template-columns: repeat(18, 1fr);
 }
@@ -55,11 +55,51 @@ body {
     font-weight: bold;
 }
 
+.left-arrow-div {
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-arrow-div img {
+    background-color: blue;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 2px black;
+    margin: 5px;
+}
+
+.right-arrow-div {
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-arrow-div img {
+    margin: 5px;
+    background-color: blue;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 3px black;
+}
+
 /* for upto 945px screen */
-@media screen and (max-width: 945px) {
+@media screen and (max-width: 1200px) {
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+    }
+
     .board {
-        width: 70%;
-        height: 80%;
+        margin-top: 100px;
+        width: 60vw;
+        height: 60vw;
     }
 
     .score-div {
@@ -70,14 +110,68 @@ body {
         font-weight: bold;
     }
 
+    .left-arrow-div img {
+        width: 70px;
+    }
+
+    .right-arrow-div img {
+        width: 70px;
+    }
+
 }
 
 /* for upto 700px screen */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 951px) {
 
     .board {
-        width: 95%;
-        height: 60%;
+        width: 70vw;
+        height: 70vw;
     }
 
+    .left-arrow-div {
+        left: 20px;
+    }
+
+    .left-arrow-div img {
+        width: 70px;
+    }
+
+    .right-arrow-div {
+        right: 20px;
+    }
+
+    .right-arrow-div img {
+        width: 70px;
+    }
+
+}
+
+
+/* for upto 700px screen */
+@media screen and (max-width: 550px) {
+
+    .board {
+        width: 90vw;
+        height: 100vw;
+    }
+
+    .left-arrow-div {
+        left: 10px;
+        bottom: 10px;
+    }
+    
+    .left-arrow-div img {
+        margin: 5px;
+        width: 50px;
+    }
+    
+    .right-arrow-div {
+        right: 10px;
+        bottom: 10px;
+    }
+    
+    .right-arrow-div img {
+        margin: 5px;
+        width: 50px;
+    }
 }
